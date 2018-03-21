@@ -54,22 +54,22 @@ strong {
 
 @font-face {
     font-family: 'Roboto-slab-bold';
-    src: url("theme/trustech_desktop_git/fonts/roboto-slab/RobotoSlab-Bold.ttf")
+    src: url("/theme/trustech_desktop_git/fonts/roboto-slab/RobotoSlab-Bold.ttf")
 }
 
 @font-face {
     font-family: 'Roboto-slab-light';
-    src: url("theme/trustech_desktop_git/fonts/roboto-slab/RobotoSlab-Light.ttf")
+    src: url("/theme/trustech_desktop_git/fonts/roboto-slab/RobotoSlab-Light.ttf")
 }
 
 @font-face {
     font-family: 'Roboto-light';
-    src: url("theme/trustech_desktop_git/fonts/roboto/Roboto-Light.ttf")
+    src: url("/theme/trustech_desktop_git/fonts/roboto/Roboto-Light.ttf")
 }
 
 @font-face {
     font-family: 'Roboto-bold';
-    src: url("theme/trustech_desktop_git/fonts/roboto/Roboto-Bold.ttf")
+    src: url("/theme/trustech_desktop_git/fonts/roboto/Roboto-Bold.ttf")
 }
 
 h1,
@@ -355,7 +355,7 @@ h2 {
 }
 
 .site-banner.is-stuck .icon-user-circle-o {
-    background-image: url("theme/trustech_desktop_git/img/icon-user-black.svg")
+    background-image: url("/theme/trustech_desktop_git/img/icon-user-black.svg")
 }
 
 .site-banner .inside {
@@ -513,7 +513,7 @@ h2 {
 }
 
 .icon-user-circle-o {
-    background-image: url("theme/trustech_desktop_git/img/icon-user.svg");
+    background-image: url("/theme/trustech_desktop_git/img/icon-user.svg");
     background-repeat: no-repeat;
     background-position: center;
     width: 1.1rem;
@@ -648,7 +648,7 @@ h2 {
     display: inline-block;
     width: .6rem;
     height: 1rem;
-    background-image: url("theme/trustech_desktop_git/img/btn-arrow.svg");
+    background-image: url("/theme/trustech_desktop_git/img/btn-arrow.svg");
     background-repeat: no-repeat;
     position: absolute;
     top: 50%;
@@ -929,14 +929,14 @@ h2 {
 
 .edito.delegate {
     background-color: #252525 !important;
-    background-image: url("theme/trustech_desktop_git/img/bg-delegate.jpg");
+    background-image: url("/theme/trustech_desktop_git/img/bg-delegate.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover
 }
 
 .edito.delegate .inside {
-    background-image: url("theme/trustech_desktop_git/img/plexus-delegate.svg");
+    background-image: url("/theme/trustech_desktop_git/img/plexus-delegate.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32rem
@@ -948,14 +948,14 @@ h2 {
 
 .edito.sponsor {
     background-color: #C5143A !important;
-    background-image: url("theme/trustech_desktop_git/img/bg-sponsor.jpg");
+    background-image: url("/theme/trustech_desktop_git/img/bg-sponsor.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover
 }
 
 .edito.sponsor .inside {
-    background-image: url("theme/trustech_desktop_git/img/plexus-sponsor.svg");
+    background-image: url("/theme/trustech_desktop_git/img/plexus-sponsor.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 27rem
@@ -1349,7 +1349,7 @@ h2 {
 .deco-link {
     margin: 5.5rem 0;
     text-align: center;
-    background-image: url("theme/trustech_desktop_git/img/pixel-grey.jpg");
+    background-image: url("/theme/trustech_desktop_git/img/pixel-grey.jpg");
     background-repeat: repeat-x;
     background-position: center
 }
@@ -1370,7 +1370,7 @@ h2 {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url("theme/trustech_desktop_git/img/bg-header-trustech.jpg");
+    background-image: url("/theme/trustech_desktop_git/img/bg-header-trustech.jpg");
     background-size: cover;
     background-position: center;
     opacity: .35
@@ -1497,7 +1497,7 @@ h2 {
     display: inline-block;
     width: .6rem;
     height: 1rem;
-    background-image: url("theme/trustech_desktop_git/img/btn-arrow.svg");
+    background-image: url("/theme/trustech_desktop_git/img/btn-arrow.svg");
     background-repeat: no-repeat;
     position: absolute;
     top: 50%;
@@ -1591,7 +1591,7 @@ h2 {
     top: -2rem;
     left: 50%;
     display: block;
-    background-image: url("theme/trustech_desktop_git/img/deco-link.svg");
+    background-image: url("/theme/trustech_desktop_git/img/deco-link.svg");
     background-repeat: no-repeat;
     background-position: center
 }
@@ -1623,7 +1623,7 @@ h2 {
     position: absolute;
     bottom: 0;
     left: 50%;
-    background-image: url("theme/trustech_desktop_git/img/deco-link-long.svg");
+    background-image: url("/theme/trustech_desktop_git/img/deco-link-long.svg");
     width: .5rem;
     height: 10.8rem;
     -webkit-transform: translateY(77%) rotate(-53deg);
@@ -1671,7 +1671,7 @@ h2 {
     top: -7.5%;
     width: 115%;
     height: 115%;
-    background-image: url("theme/trustech_desktop_git/img/circle-line.svg");
+    background-image: url("/theme/trustech_desktop_git/img/circle-line.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%
@@ -1917,7 +1917,7 @@ h2 {
     position: absolute;
     width: .5rem;
     height: 4rem;
-    background-image: url("theme/trustech_desktop_git/img/deco-link-white.svg");
+    background-image: url("/theme/trustech_desktop_git/img/deco-link-white.svg");
     background-repeat: no-repeat
 }
 
@@ -1945,7 +1945,7 @@ h2 {
 }
 
 .square.square-grey.square-title::after {
-    background-image: url("theme/trustech_desktop_git/img/deco-link.svg");
+    background-image: url("/theme/trustech_desktop_git/img/deco-link.svg");
     right: 0;
     top: 50%;
     -webkit-transform: translateX(50%) translateY(-50%) rotate(90deg);
@@ -1978,7 +1978,7 @@ h2 {
 }
 
 section.programme+.list-articles {
-    background-image: url("theme/trustech_desktop_git/img/pixel-grey.jpg");
+    background-image: url("/theme/trustech_desktop_git/img/pixel-grey.jpg");
     background-repeat: repeat-x;
     background-position: center
 }
@@ -2053,7 +2053,7 @@ section.programme+.list-articles .gla-item .gla-item-content .gla-item-title {
 }
 
 section.keyfigures {
-    background-image: url("theme/trustech_desktop_git/img/baie-cannes-trustech.jpg");
+    background-image: url("/theme/trustech_desktop_git/img/baie-cannes-trustech.jpg");
     background-size: auto 57vh;
     background-position: center;
     height: 42.5rem;
@@ -2079,7 +2079,7 @@ section.keyfigures .figures {
 
 section.keyfigures .figures::before {
     content: '';
-    background-image: url("theme/trustech_desktop_git/img/baie-cannes-trustech.jpg");
+    background-image: url("/theme/trustech_desktop_git/img/baie-cannes-trustech.jpg");
     position: absolute;
     left: -4%;
     top: -6%;

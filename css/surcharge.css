@@ -820,6 +820,10 @@ abbr[title] {
     color: white
 }
 
+.article-title {
+    margin-bottom: 0
+}
+
 [class^="btn"],
 .main-title-with-link [class^="btn-"],
 .main-title-with-link [class^="link-"],
@@ -1091,8 +1095,9 @@ abbr[title] {
 .edito.delegate,
 .edito.sponsor {
     margin: 0 !important;
-    float: left;
-    width: 50%;
+    float: none;
+    flex-basis: 50%;
+    min-width: 50%;
     padding-bottom: 35% !important
 }
 
@@ -1196,7 +1201,9 @@ abbr[title] {
 .newsletter-form {
     margin-top: 0;
     clear: both;
-    text-align: center
+    text-align: center;
+    flex-basis: 100%;
+    min-width: 100%
 }
 
 .newsletter-form .nf-form-item {
@@ -1494,17 +1501,17 @@ abbr[title] {
     color: #252525
 }
 
-.site-footer .inside {
+.site-footer>.inside {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 3rem 0rem;
-    max-width: 116rem
+    padding: 0;
+    max-width: none
 }
 
-.site-footer .inside .quicklinks {
+.site-footer>.inside .quicklinks {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1514,7 +1521,7 @@ abbr[title] {
     margin: 0
 }
 
-.site-footer .inside .quicklinks:first-child {
+.site-footer>.inside .quicklinks:first-child {
     -ms-flex-preferred-size: 80%;
     flex-basis: 80%;
     width: 80%;
@@ -1522,11 +1529,11 @@ abbr[title] {
     border-bottom: 1px solid #E4E4E4
 }
 
-.site-footer .inside .quicklinks:last-child {
+.site-footer>.inside .quicklinks:last-child {
     padding: 2rem 0
 }
 
-.site-footer .inside .quicklinks .btn-primary {
+.site-footer>.inside .quicklinks .btn-primary {
     -webkit-box-shadow: none;
     box-shadow: none;
     background-color: transparent;
@@ -1537,15 +1544,15 @@ abbr[title] {
     font-size: 1.6rem
 }
 
-.site-footer .inside .quicklinks .btn-primary::after {
+.site-footer>.inside .quicklinks .btn-primary::after {
     display: none
 }
 
-.site-footer .inside .quicklinks .btn-primary:hover {
+.site-footer>.inside .quicklinks .btn-primary:hover {
     color: #C5143A
 }
 
-.site-footer .inside .nav-social {
+.site-footer>.inside .nav-social {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -1561,33 +1568,69 @@ abbr[title] {
     border-bottom: 1px solid #E4E4E4
 }
 
-.site-footer .inside .nav-social li {
+.site-footer>.inside .nav-social li {
     margin-right: 2.5rem
 }
 
-.site-footer .inside .nav-social li:last-child {
+.site-footer>.inside .nav-social li:last-child {
     margin-right: 0
 }
 
-.site-footer .inside .nav-social li a {
+.site-footer>.inside .nav-social li a {
     -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.site-footer .inside .nav-social li a svg {
+.site-footer>.inside .nav-social li a svg {
     height: 2.5rem
 }
 
-.site-footer .inside .nav-social li a svg path {
+.site-footer>.inside .nav-social li a svg path {
     fill: #252525;
     -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.site-footer .inside .nav-social li a:hover svg path {
+.site-footer>.inside .nav-social li a:hover svg path {
     fill: #C5143A
+}
+
+body:not(.front) h3 {
+    font-size: 3.5rem;
+    line-height: 4.4rem;
+    text-transform: uppercase;
+    color: #252525;
+    font-family: "Roboto-slab-bold", sans-serif;
+    position: relative;
+    margin-bottom: 3.5rem;
+    margin-top: 1.5rem
+}
+
+body:not(.front) h3 .title-deco {
+    color: #f5f5f5;
+    font-size: 9rem;
+    line-height: 8.6rem;
+    text-transform: capitalize;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1
+}
+
+body:not(.front) h3 .title-txt {
+    position: relative;
+    z-index: 2
+}
+
+body:not(.front) .text-right h3 .title-deco {
+    left: auto;
+    right: 0
+}
+
+body:not(.front) .list-btn {
+    margin: 6rem auto
 }
 
 .deco-link {
@@ -2005,8 +2048,13 @@ abbr[title] {
 
 .video-container .landing .landing-text {
     max-width: 116rem;
-    margin: 0 auto;
-    padding-left: 10rem
+    margin: 0 auto
+}
+
+@media screen and (max-width: 1199px) {
+    .video-container .landing .landing-text {
+        padding-left: 10rem
+    }
 }
 
 .video-container .landing .landing-text p {

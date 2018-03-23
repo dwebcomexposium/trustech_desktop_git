@@ -100,7 +100,7 @@ h4,
     font-family: "Roboto-light", sans-serif;
     font-size: 2.2rem;
     line-height: 3.5rem;
-    color: #aaa;
+    color: #a0a0a0;
     font-weight: normal;
     margin: 0 0 4.5rem 0
 }
@@ -131,6 +131,10 @@ h4,
 
 .text-right {
     text-align: right
+}
+
+.text-transform-none {
+    text-transform: none
 }
 
 .flex {
@@ -349,12 +353,12 @@ h2 {
     text-align: left;
     font-size: 1.6rem;
     line-height: 2.7rem;
-    color: #aaa;
+    color: #a0a0a0;
     margin-top: 1rem
 }
 
 .list-articles .grid-la-list .gla-item .gla-item-content .gla-item-desc strong {
-    color: #aaa;
+    color: #a0a0a0;
     font-family: "Roboto-light", sans-serif;
     font-weight: normal
 }
@@ -1087,7 +1091,7 @@ abbr[title] {
     content: 'Advertising';
     position: absolute;
     top: -2.5rem;
-    color: #aaa;
+    color: #a0a0a0;
     font-size: 1.2rem;
     width: 100%;
     text-align: center
@@ -1140,7 +1144,7 @@ abbr[title] {
 
 .edito.delegate .block-title+p,
 .edito.sponsor .block-title+p {
-    color: #aaa;
+    color: #a0a0a0;
     font-size: 2.4rem;
     line-height: 4rem
 }
@@ -1172,7 +1176,7 @@ abbr[title] {
 }
 
 .edito.delegate .block-title+p {
-    color: #aaa
+    color: #a0a0a0
 }
 
 .edito.sponsor {
@@ -1230,7 +1234,7 @@ abbr[title] {
 }
 
 .newsletter-form .nf-main-content .style1 {
-    color: #aaa;
+    color: #a0a0a0;
     font-size: 1.8rem;
     line-height: 2.8rem;
     font-family: "Roboto-light", sans-serif;
@@ -1542,7 +1546,7 @@ abbr[title] {
     font-size: 2.2rem;
     line-height: 3.4rem;
     border: 0 none;
-    color: #aaa;
+    color: #a0a0a0;
     font-weight: normal
 }
 
@@ -1592,7 +1596,7 @@ abbr[title] {
     font-size: 1.1rem;
     text-transform: uppercase;
     font-family: "Roboto-light", sans-serif;
-    color: #aaa
+    color: #a0a0a0
 }
 
 .site-footer>.inside .quicklinks .btn-primary {
@@ -1678,7 +1682,7 @@ abbr[title] {
 
 .site-footer>.inside .copyright {
     font-size: 1.1rem;
-    color: #aaa;
+    color: #a0a0a0;
     -ms-flex-preferred-size: calc(.2 * 116rem);
     flex-basis: calc(.2 * 116rem);
     width: calc(.2 * 116rem);
@@ -1688,7 +1692,7 @@ abbr[title] {
 
 .site-footer>.inside .copyright a {
     display: inline-block;
-    color: #aaa
+    color: #a0a0a0
 }
 
 .site-footer>.inside .copyright a:hover svg g {
@@ -1717,6 +1721,15 @@ body:not(.front) h3 {
     margin-top: 1.5rem
 }
 
+body:not(.front) h3.text-center .title-deco {
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+body:not(.front) h3+h4 {
+    margin-top: -3rem
+}
+
 body:not(.front) h3 .title-deco {
     color: #f5f5f5;
     font-size: 9rem;
@@ -1739,7 +1752,7 @@ body:not(.front) .text-right h3 .title-deco {
 }
 
 body:not(.front) .list-btn {
-    margin: 6rem auto
+    margin: 6.5rem auto
 }
 
 body:not(.front) #zone1 .main-navigation {
@@ -1836,15 +1849,16 @@ body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .m
 
 body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active .mn-link-text {
     font-family: "Roboto-bold", sans-serif;
-    color: #252525
+    color: #252525;
+    font-weight: normal
 }
 
 body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text {
     text-transform: none;
     font-family: "Roboto-light", sans-serif;
     color: #575757;
-    font-size: 1.4rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
     font-weight: bold
 }
 
@@ -2105,7 +2119,12 @@ body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .m
 .front .site-wrapper .contacts-list {
     background-color: #f5f5f5;
     margin: 0;
-    padding-bottom: 11.5rem
+    padding-bottom: 22rem
+}
+
+.front .site-wrapper .contacts-list+.quicklinks {
+    margin-top: -20rem;
+    margin-bottom: 15rem
 }
 
 .front .site-wrapper .contacts-list .cl-item {
@@ -2225,8 +2244,9 @@ body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .m
 
 .front .site-wrapper .contacts-list .cl-item .cl-item-content .cl-item-desc {
     order: 1;
-    color: #aaa;
-    font-size: 2rem
+    color: #a0a0a0;
+    font-size: 2rem;
+    margin: 0.7rem 0 0 0
 }
 
 .front .site-wrapper .contacts-list .cl-item .cl-item-content .cl-item-subtitle {
@@ -2697,7 +2717,7 @@ section.keyfigures .figures .figure .number {
 section.keyfigures .figures .figure .text {
     font-size: 1.7rem;
     line-height: 2rem;
-    color: #aaa;
+    color: #a0a0a0;
     margin: 0
 }
 
@@ -2758,4 +2778,134 @@ section.keyfigures .figures .figure .text {
 .top-functions .stat-bg-img {
     background-image: url("/theme/trustech_desktop_git/img/bg-functions.jpg");
     background-position: bottom left
+}
+
+.chart-bloc {
+    margin: 5rem 0
+}
+
+.chart-bloc .chart-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 0
+}
+
+.chart-bloc .chart-row .chart-row-txt {
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    width: 33rem;
+    text-align: right
+}
+
+.chart-bloc .chart-row .chart-row-separator {
+    width: 3rem;
+    height: 1px;
+    background-color: #a0a0a0;
+    margin: 0 2rem
+}
+
+.chart-bloc .chart-row .chart-row-bar {
+    color: white;
+    position: relative;
+    background-color: #E4E4E4;
+    font-family: "Roboto-slab-bold", sans-serif;
+    font-size: 3.2rem;
+    line-height: 4.5rem;
+    width: 33rem;
+    text-align: left;
+    padding-left: 1.2rem
+}
+
+.chart-bloc .chart-row .chart-row-bar .number {
+    position: relative;
+    z-index: 1
+}
+
+.chart-bloc .chart-row .chart-row-bar .chart-row-percent {
+    z-index: 0;
+    background-color: #C5143A;
+    height: 5.5rem;
+    margin-top: -.5rem;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.chart-bloc .chart-circles {
+    display: flex;
+    justify-content: center
+}
+
+.chart-bloc .chart-circles .chart-circle-card {
+    position: relative;
+    margin: 3rem 2rem 0
+}
+
+.chart-bloc .chart-circles .chart-circle-card .chart-circle-number {
+    font-size: 4.5rem;
+    font-family: "Roboto-slab-bold", sans-serif;
+    color: #252525;
+    position: absolute;
+    top: 3.7rem;
+    left: 50%;
+    transform: translateX(-56%)
+}
+
+.chart-bloc .chart-circles .chart-circle-card .chart-circle-bloc {
+    transform: rotate(-90deg);
+    transform-origin: center
+}
+
+.chart-bloc .chart-circles .chart-circle-card .chart-circle-background {
+    stroke: #E4E4E4
+}
+
+.chart-bloc .chart-circles .chart-circle-card .chart-circle-percent {
+    stroke: #C5143A
+}
+
+.chart-bloc .chart-circles .chart-circle-card .chart-circle-txt {
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    margin-top: 1rem
+}
+
+.conference-track {
+    padding-top: 4rem
+}
+
+.conference-track .conf-track-list {
+    display: flex;
+    justify-content: center;
+    margin: 6rem 0 0 0;
+    padding: 0;
+    list-style-type: none
+}
+
+.conference-track .conf-track-list .conf-track-item {
+    max-width: 15rem;
+    margin: 0 2.5rem
+}
+
+.conference-track .conf-track-list .conf-track-item.conf-track-payment img {
+    margin-left: 1.4rem
+}
+
+.conference-track .conf-track-list .conf-track-item.conf-track-iot img {
+    margin-left: .8rem
+}
+
+.conference-track .conf-track-list .conf-track-item.conf-track-secure img {
+    margin-left: 1.2rem
+}
+
+.conference-track .conf-track-list .conf-track-icon {
+    background-color: #f5f5f5;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100px;
+    margin: 0 auto 1rem;
+    display: flex;
+    justify-content: center
 }

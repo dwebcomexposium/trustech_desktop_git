@@ -78,6 +78,7 @@ small {
 
 h1,
 .h1-like,
+body.page-rubric section h1,
 body.article section h1 {
     color: white;
     font-size: 5.8rem;
@@ -88,6 +89,7 @@ body.article section h1 {
 
 h2,
 .h2-like,
+body.page-rubric section h2,
 body.article section h2 {
     color: #252525;
     font-size: 4.2rem;
@@ -99,6 +101,7 @@ body.article section h2 {
 
 h4,
 .h4-like,
+body.page-rubric section h4,
 body.article section h4 {
     font-family: "Roboto-light", sans-serif;
     font-size: 2.2rem;
@@ -1179,7 +1182,9 @@ abbr[title] {
 body.front .edito.delegate,
 body.front .edito.sponsor,
 body:not(.front).article .edito.delegate,
-body:not(.front).article .edito.sponsor {
+body:not(.front).article .edito.sponsor,
+body:not(.front).page-rubric .edito.delegate,
+body:not(.front).page-rubric .edito.sponsor {
     margin: 0 !important;
     float: none;
     flex-basis: 50%;
@@ -1190,14 +1195,18 @@ body:not(.front).article .edito.sponsor {
 body.front .edito.delegate::before,
 body.front .edito.sponsor::before,
 body:not(.front).article .edito.delegate::before,
-body:not(.front).article .edito.sponsor::before {
+body:not(.front).article .edito.sponsor::before,
+body:not(.front).page-rubric .edito.delegate::before,
+body:not(.front).page-rubric .edito.sponsor::before {
     display: none !important
 }
 
 body.front .edito.delegate .inside,
 body.front .edito.sponsor .inside,
 body:not(.front).article .edito.delegate .inside,
-body:not(.front).article .edito.sponsor .inside {
+body:not(.front).article .edito.sponsor .inside,
+body:not(.front).page-rubric .edito.delegate .inside,
+body:not(.front).page-rubric .edito.sponsor .inside {
     position: absolute;
     max-width: none;
     width: 100%;
@@ -1222,7 +1231,9 @@ body:not(.front).article .edito.sponsor .inside {
 body.front .edito.delegate .block-title,
 body.front .edito.sponsor .block-title,
 body:not(.front).article .edito.delegate .block-title,
-body:not(.front).article .edito.sponsor .block-title {
+body:not(.front).article .edito.sponsor .block-title,
+body:not(.front).page-rubric .edito.delegate .block-title,
+body:not(.front).page-rubric .edito.sponsor .block-title {
     border: 0 none;
     margin: 0;
     padding: 0;
@@ -1232,7 +1243,9 @@ body:not(.front).article .edito.sponsor .block-title {
 body.front .edito.delegate .block-title+p,
 body.front .edito.sponsor .block-title+p,
 body:not(.front).article .edito.delegate .block-title+p,
-body:not(.front).article .edito.sponsor .block-title+p {
+body:not(.front).article .edito.sponsor .block-title+p,
+body:not(.front).page-rubric .edito.delegate .block-title+p,
+body:not(.front).page-rubric .edito.sponsor .block-title+p {
     color: #a0a0a0;
     font-size: 2.4rem;
     line-height: 4rem
@@ -1241,7 +1254,9 @@ body:not(.front).article .edito.sponsor .block-title+p {
 body.front .edito.delegate h3,
 body.front .edito.sponsor h3,
 body:not(.front).article .edito.delegate h3,
-body:not(.front).article .edito.sponsor h3 {
+body:not(.front).article .edito.sponsor h3,
+body:not(.front).page-rubric .edito.delegate h3,
+body:not(.front).page-rubric .edito.sponsor h3 {
     color: white;
     font-size: 4.5rem;
     line-height: 4.7rem;
@@ -1252,7 +1267,8 @@ body:not(.front).article .edito.sponsor h3 {
 }
 
 body.front .edito.delegate,
-body:not(.front).article .edito.delegate {
+body:not(.front).article .edito.delegate,
+body:not(.front).page-rubric .edito.delegate {
     background-color: #252525 !important;
     background-image: url("/theme/trustech_desktop_git/img/bg-delegate.jpg");
     background-position: center;
@@ -1262,7 +1278,8 @@ body:not(.front).article .edito.delegate {
 }
 
 body.front .edito.delegate .inside,
-body:not(.front).article .edito.delegate .inside {
+body:not(.front).article .edito.delegate .inside,
+body:not(.front).page-rubric .edito.delegate .inside {
     background-image: url("/theme/trustech_desktop_git/img/plexus-delegate.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -1270,12 +1287,14 @@ body:not(.front).article .edito.delegate .inside {
 }
 
 body.front .edito.delegate .block-title+p,
-body:not(.front).article .edito.delegate .block-title+p {
+body:not(.front).article .edito.delegate .block-title+p,
+body:not(.front).page-rubric .edito.delegate .block-title+p {
     color: #a0a0a0
 }
 
 body.front .edito.sponsor,
-body:not(.front).article .edito.sponsor {
+body:not(.front).article .edito.sponsor,
+body:not(.front).page-rubric .edito.sponsor {
     background-color: #C5143A !important;
     background-image: url("/theme/trustech_desktop_git/img/bg-sponsor.jpg");
     background-repeat: no-repeat;
@@ -1285,7 +1304,8 @@ body:not(.front).article .edito.sponsor {
 }
 
 body.front .edito.sponsor .inside,
-body:not(.front).article .edito.sponsor .inside {
+body:not(.front).article .edito.sponsor .inside,
+body:not(.front).page-rubric .edito.sponsor .inside {
     background-image: url("/theme/trustech_desktop_git/img/plexus-sponsor.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -1293,12 +1313,14 @@ body:not(.front).article .edito.sponsor .inside {
 }
 
 body.front .edito.sponsor .block-title+p,
-body:not(.front).article .edito.sponsor .block-title+p {
+body:not(.front).article .edito.sponsor .block-title+p,
+body:not(.front).page-rubric .edito.sponsor .block-title+p {
     color: #F66C89
 }
 
 body.front .edito.sponsor .edito-item-btn a,
-body:not(.front).article .edito.sponsor .edito-item-btn a {
+body:not(.front).article .edito.sponsor .edito-item-btn a,
+body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     background-color: #252525;
     border-color: #252525
 }
@@ -1935,7 +1957,8 @@ body:not(.front).article .edito.sponsor .edito-item-btn a {
     transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-body:not(.front).article h3 {
+body:not(.front).article h3,
+body:not(.front).page-rubric h3 {
     font-size: 3.5rem;
     line-height: 4.2rem;
     text-transform: uppercase;
@@ -1946,18 +1969,21 @@ body:not(.front).article h3 {
     margin-top: 1.5rem
 }
 
-body:not(.front).article h3.text-center .title-deco {
+body:not(.front).article h3.text-center .title-deco,
+body:not(.front).page-rubric h3.text-center .title-deco {
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%)
 }
 
-body:not(.front).article h3+h4 {
+body:not(.front).article h3+h4,
+body:not(.front).page-rubric h3+h4 {
     margin-top: -3rem
 }
 
-body:not(.front).article h3 .title-deco {
+body:not(.front).article h3 .title-deco,
+body:not(.front).page-rubric h3 .title-deco {
     color: #f5f5f5;
     font-size: 9rem;
     line-height: 8.6rem;
@@ -1968,21 +1994,25 @@ body:not(.front).article h3 .title-deco {
     z-index: 1
 }
 
-body:not(.front).article h3 .title-txt {
+body:not(.front).article h3 .title-txt,
+body:not(.front).page-rubric h3 .title-txt {
     position: relative;
     z-index: 2
 }
 
-body:not(.front).article .text-right h3 .title-deco {
+body:not(.front).article .text-right h3 .title-deco,
+body:not(.front).page-rubric .text-right h3 .title-deco {
     left: auto;
     right: 0
 }
 
-body:not(.front).article .list-btn {
+body:not(.front).article .list-btn,
+body:not(.front).page-rubric .list-btn {
     margin: 6.5rem auto
 }
 
-body:not(.front).article #zone1 .main-navigation {
+body:not(.front).article #zone1 .main-navigation,
+body:not(.front).page-rubric #zone1 .main-navigation {
     position: absolute;
     width: 116rem;
     margin-left: 50%;
@@ -1993,11 +2023,13 @@ body:not(.front).article #zone1 .main-navigation {
     padding: 0
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line {
+body:not(.front).article #zone1 .main-navigation .mn-menu-line,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line {
     border: 0 none
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu {
+body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     -webkit-box-flex: 1;
@@ -2007,15 +2039,18 @@ body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu {
     content: counter(nbItem)
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu::before {
+body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu::before,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu::before {
     display: none
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu::after {
+body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu::after,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu::after {
     display: none
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item {
+body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
@@ -2023,7 +2058,8 @@ body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu
     flex-basis: 100%
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link {
+body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link {
     padding: 1.5rem 3rem;
     min-height: 8.4rem;
     display: -webkit-box;
@@ -2038,7 +2074,8 @@ body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu
     justify-content: center
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link::before {
+body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link::before,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link::before {
     content: "";
     display: inline-block;
     width: 2rem;
@@ -2058,37 +2095,47 @@ body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu
 }
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus,
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover {
+body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover {
     background-color: white
 }
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus::before,
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover::before {
+body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover::before,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus::before,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover::before {
     background-position: -100% 0;
     background-color: #C5143A
 }
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus .mn-link-text,
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover .mn-link-text {
+body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover .mn-link-text,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus .mn-link-text,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover .mn-link-text {
     color: #252525
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active {
+body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active {
     background-color: #f5f5f5
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active::before {
+body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active::before,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active::before {
     background-position: -100% 0;
     background-color: #C5143A
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active .mn-link-text {
+body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active .mn-link-text,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active .mn-link-text {
     font-family: "Roboto-bold", sans-serif;
     color: #252525;
     font-weight: normal
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text {
+body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text {
     text-transform: none;
     font-family: "Roboto-light", sans-serif;
     color: #575757;
@@ -2097,7 +2144,8 @@ body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu
     font-weight: bold
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text::before {
+body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text::before,
+body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text::before {
     display: none
 }
 
@@ -3967,6 +4015,9 @@ body.article .cl-item-phone span:nth-child(2) {
 }
 
 .join {
+    background-image: url("/theme/trustech_desktop_git/img/pixel-grey.jpg");
+    background-repeat: repeat-x;
+    background-position: 0 calc(50% + 4.3rem);
     padding: 15rem 0 16rem
 }
 
@@ -3979,10 +4030,37 @@ body.article .cl-item-phone span:nth-child(2) {
 }
 
 .join .items-global-join {
+    background-color: #f5f5f5;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    max-width: 90rem
+    position: relative;
+    max-width: 110rem;
+    padding: 0 10rem
+}
+
+.join .items-global-join::before,
+.join .items-global-join::after {
+    content: '';
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    background-color: #252525;
+    position: absolute;
+    top: 50%;
+    margin-top: 0.5rem;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    border-radius: 1rem
+}
+
+.join .items-global-join::before {
+    left: 0rem
+}
+
+.join .items-global-join::after {
+    right: 0rem
 }
 
 .join .items-global-join .item-join {
@@ -3996,7 +4074,7 @@ body.article .cl-item-phone span:nth-child(2) {
 }
 
 .join .items-global-join .item-join:nth-child(even) {
-    margin-top: 12rem
+    margin-top: 10rem
 }
 
 .join .items-global-join .item-join .item-content {

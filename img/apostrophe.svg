@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="27px" viewBox="0 0 42 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>apostrophe</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.000183663477 0.083951085 18.979049 0.083951085 18.979049 26.7285219 0.000183663477 26.7285219 0.000183663477 0.083951085"></polygon>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="All-in-one" transform="translate(-414.000000, -2676.000000)">
+            <g id="Citation" transform="translate(414.000000, 2676.000000)">
+                <g id="apostrophe">
+                    <g id="Group-3" transform="translate(32.500000, 13.500000) scale(1, -1) translate(-32.500000, -13.500000) translate(23.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M0.000183663477,17.7010792 C0.000183663477,10.4939412 7.19336374,2.04892266 13.0099861,0.0833395702 L16.1469582,2.41321073 C12.321248,5.2523863 11.9539211,8.97738465 12.2275796,9.05600797 C16.1331835,10.1733328 18.979049,13.6214023 18.979049,17.7010792 C18.979049,22.6866715 14.7299945,26.7287839 9.4891572,26.7287839 C4.24831988,26.7287839 0.000183663477,22.6866715 0.000183663477,17.7010792" id="Fill-1" fill="#C5143A" mask="url(#mask-2)"></path>
+                    </g>
+                    <path d="M0,17.8521688 C0,10.5491295 7.2011903,1.99173798 13.0242899,0 L16.1647554,2.36087341 C12.3347849,5.23782827 11.9670489,9.01239304 12.2410122,9.09206256 C16.1509653,10.2242549 19,13.718206 19,17.8521688 C19,22.9041015 14.7462138,27 9.49954033,27 C4.25286689,27 0,22.9041015 0,17.8521688" id="Fill-4" fill="#C5143A" transform="translate(9.500000, 13.500000) scale(1, -1) translate(-9.500000, -13.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -140,7 +140,11 @@ body.article section h4 {
 }
 
 .text-transform-none {
-    text-transform: none
+    text-transform: none !important
+}
+
+.noscroll {
+    overflow: hidden
 }
 
 .flex {
@@ -450,6 +454,10 @@ h2 {
 
 .site-banner.is-stuck .lang-switcher .ls-trigger::after {
     transform: rotate(90deg)
+}
+
+.site-banner.is-stuck .mn-item-lvl-1:first-child {
+    display: block
 }
 
 .site-banner.is-stuck .mn-item-lvl-1>.mn-link {
@@ -911,7 +919,7 @@ abbr[title] {
 .edito-item-btn a,
 .article .focus1 a,
 .btn {
-    padding: 1.4rem 2.8rem;
+    padding: 1.3rem 2.8rem;
     font-size: 1.3rem;
     color: white;
     border-radius: 100px;
@@ -1036,6 +1044,83 @@ abbr[title] {
 
 .quicklinks .ql-list .ql-item:last-child {
     margin-right: 0
+}
+
+.popin {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: hidden;
+    -webkit-transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0
+}
+
+.popin.popin-open {
+    opacity: 1;
+    -webkit-transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: visible
+}
+
+.popin.popin-video .popin-container {
+    background-color: transparent
+}
+
+.popin.popin-video .popin-container iframe {
+    width: 90rem;
+    max-width: 100%;
+    height: 51rem
+}
+
+.popin .popin-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.9);
+    z-index: 0
+}
+
+.popin .popin-container {
+    background-color: white;
+    position: relative;
+    z-index: 1
+}
+
+.popin .popin-container .popin-close {
+    color: white;
+    font-family: "Roboto-bold", sans-serif;
+    text-align: right;
+    cursor: pointer;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    font-size: 1.6rem;
+    padding: 1rem 0
+}
+
+.popin .popin-container .popin-close:hover {
+    color: #C5143A
 }
 
 .tabSlider .tabSlider-nav {
@@ -1519,7 +1604,9 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
 .chart-bloc .chart-circles .chart-circle-card {
     text-align: center;
     position: relative;
-    margin: 3rem 2rem 0
+    margin: 3rem 0 0;
+    min-width: 33%;
+    flex-basis: 33%
 }
 
 .chart-bloc .chart-circles .chart-circle-card .chart-icon {
@@ -2220,7 +2307,7 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-
 
 .page-rubric #zone2 .edito {
     padding: 9rem 0;
-    background-color: #f5f5f5
+    margin-top: 0
 }
 
 .page-rubric #zone2 .edito .inside {
@@ -4316,6 +4403,10 @@ body.article .cl-item-phone span:nth-child(2) {
     background-position: bottom left
 }
 
+.top-functions+.edito {
+    background-color: #f5f5f5
+}
+
 .top-sectors .chart-bloc .chart-circles .chart-circle-card {
     margin-top: 0
 }
@@ -4338,4 +4429,108 @@ body.article .cl-item-phone span:nth-child(2) {
 .top-sectors.delegate .stat-bg-img {
     background-image: url("/theme/trustech_desktop_git/img/bg-sectors-delegate.jpg");
     background-position: bottom right
+}
+
+.video-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.video-list .video-item {
+    -ms-flex-preferred-size: 31%;
+    flex-basis: 31%;
+    min-width: 31%;
+    width: 31%;
+    position: relative;
+    background-color: #17060A;
+    cursor: pointer;
+    overflow: hidden
+}
+
+.video-list .video-item:hover img {
+    opacity: .99;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03)
+}
+
+.video-list .video-item:hover .play-icon {
+    -webkit-box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0)
+}
+
+.video-list .video-item img {
+    opacity: .85;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease
+}
+
+.video-list .video-item .play-icon {
+    position: absolute;
+    background-color: white;
+    -webkit-box-shadow: 0 0 0 0.8rem rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 0.8rem rgba(255, 255, 255, 0.15);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease
+}
+
+.video-list .video-item .play-icon img {
+    margin-left: .3rem
+}
+
+.video-list .video-item .video-title {
+    position: absolute;
+    right: 2.5rem;
+    bottom: 1.5rem;
+    font-size: 2.8rem;
+    line-height: 4.4rem;
+    font-family: "Roboto-slab-bold", sans-serif;
+    color: white;
+    text-transform: uppercase
+}
+
+.video-list .video-item .video-title .deco-title {
+    font-size: 10rem;
+    opacity: .2;
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    left: 0;
+    text-align: center
+}
+
+.highlights {
+    text-align: center;
+    padding: 8rem 0 9rem
+}
+
+.highlights h2+p {
+    margin: 3rem auto 4rem auto;
+    max-width: 60rem
 }

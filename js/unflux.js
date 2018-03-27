@@ -5,8 +5,25 @@
         init : function(){
 
             this.tabSLider();
+            this.popin();
 
         },
+
+
+        popin : function(){
+            $(".video-item").click(function(){
+                var videoName = $(this).data('videoname');
+                $("#"+videoName).addClass('popin-open');
+                $("body").addClass('noscroll');
+            });
+            $(".popin-close, .popin-overlay").click(function(){
+                $(".popin").removeClass('popin-open');
+                $('.popin-video iframe').attr("src", $(".popin-video iframe").attr("src"));
+                $("body").removeClass('noscroll');
+            });
+        },
+
+
         tabSLider : function(){
 
             var gallery = $('.tabSlider-imgs'),

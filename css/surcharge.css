@@ -2057,7 +2057,8 @@ body:not(.front).page-rubric .intro-attendees h2 {
     font-size: 4rem;
     line-height: 5rem;
     text-transform: none;
-    margin-bottom: 3.5rem
+    margin-bottom: 3.5rem;
+    margin-top: 1.7rem
 }
 
 body:not(.front).article .intro-attendees .intro-img,
@@ -2650,6 +2651,112 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-
     -webkit-transform: translateX(-50%) translateY(50%);
     -ms-transform: translateX(-50%) translateY(50%);
     transform: translateX(-50%) translateY(50%)
+}
+
+.blocs-infos {
+    padding: 5rem 0 6rem
+}
+
+.blocs-infos ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.blocs-infos ul .bloc-item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin: 2.4rem
+}
+
+.blocs-infos ul .bloc-item a {
+    border: 1px solid #E4E4E4;
+    display: block;
+    text-align: center;
+    padding: 4rem 7rem 0 7rem;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.blocs-infos ul .bloc-item a:hover .btn {
+    background-color: white;
+    border-color: white;
+    color: #C5143A
+}
+
+.blocs-infos ul .bloc-item a:hover .btn::before {
+    margin-right: 0.3rem;
+    margin-left: 0.2rem
+}
+
+.blocs-infos ul .bloc-item a:hover h3 {
+    color: #C5143A
+}
+
+.blocs-infos ul .bloc-item a h3 {
+    text-transform: none;
+    text-align: left;
+    margin-bottom: 3.5rem;
+    -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.blocs-infos ul .bloc-item a .bloc-content {
+    text-align: left;
+    margin-bottom: 1rem
+}
+
+.blocs-infos ul .bloc-item a .bloc-content p {
+    color: #575757
+}
+
+.blocs-infos ul .bloc-item a .bloc-content ul {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.blocs-infos ul .bloc-item a .bloc-content ul li {
+    margin-right: 3.5rem
+}
+
+.blocs-infos ul .bloc-item a .btn {
+    border-color: white;
+    background-color: white;
+    color: #252525;
+    padding: 1.3rem 1.7rem;
+    -webkit-transform: translateY(48%);
+    -ms-transform: translateY(48%);
+    transform: translateY(48%);
+    margin-top: auto
+}
+
+.blocs-infos ul .bloc-item a .btn::before {
+    content: '›';
+    display: inline-block;
+    margin-right: .5rem;
+    color: #C5143A;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 html[lang="fr"] section.keyfigures .figures .title::before {
@@ -3826,7 +3933,13 @@ body.article .cl-item-phone span:nth-child(2) {
 }
 
 .conference-track .conf-track-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 6rem 0 0 0;
     padding: 0;
@@ -3835,7 +3948,7 @@ body.article .cl-item-phone span:nth-child(2) {
 
 .conference-track .conf-track-list .conf-track-item {
     max-width: 15rem;
-    margin: 0 2.5rem
+    margin: 0 2.6rem 3rem
 }
 
 .conference-track .conf-track-list .conf-track-item.conf-track-payment img {
@@ -3843,11 +3956,37 @@ body.article .cl-item-phone span:nth-child(2) {
 }
 
 .conference-track .conf-track-list .conf-track-item.conf-track-iot img {
-    margin-left: .8rem
+    margin-left: .8rem;
+    width: 6.1rem
 }
 
 .conference-track .conf-track-list .conf-track-item.conf-track-secure img {
-    margin-left: 1.2rem
+    margin-left: 1rem
+}
+
+.conference-track .conf-track-list .conf-track-item.conf-track-bio .conf-track-icon img {
+    width: 4.2rem
+}
+
+.conference-track .conf-track-list .conf-track-item.conf-track-cybersecurity .conf-track-icon img {
+    width: 5.7rem
+}
+
+.conference-track .conf-track-list .conf-track-item.conf-track-ai .conf-track-icon img {
+    max-width: 6.8rem
+}
+
+.conference-track .conf-track-list .conf-track-item.conf-track-eid .conf-track-icon img {
+    width: 5.5rem
+}
+
+.conference-track .conf-track-list .conf-track-item.conf-track-challenge .conf-track-icon img {
+    width: 5.8rem
+}
+
+.conference-track .conf-track-list .conf-track-item.conf-track-neobanks .conf-track-icon img {
+    width: 5.5rem;
+    margin-top: -0.6rem
 }
 
 .conference-track .conf-track-list .conf-track-icon {
@@ -3855,9 +3994,17 @@ body.article .cl-item-phone span:nth-child(2) {
     width: 12rem;
     height: 12rem;
     border-radius: 100px;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center
+}
+
+.conference-track .conf-track-list .conf-track-icon img {
+    max-width: 6.5rem
 }
 
 .conference-track .conf-track-list .conf-track-txt {
@@ -4282,8 +4429,8 @@ body.article .cl-item-phone span:nth-child(2) {
 }
 
 .solutions-services .circle-grey img.trustech-icon-security {
-    width: 5.2rem;
-    margin-left: 0.7rem
+    width: 4.2rem;
+    margin-left: 0rem
 }
 
 .solutions-services .circle-grey img.trustech-icon-mobile {
@@ -4607,6 +4754,7 @@ body.article .cl-item-phone span:nth-child(2) {
 .top-sectors.delegate .chart-circle-card {
     margin: 3rem 0 0;
     min-width: 33%;
+    -ms-flex-preferred-size: 33%;
     flex-basis: 33%
 }
 

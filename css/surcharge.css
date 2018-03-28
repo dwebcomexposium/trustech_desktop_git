@@ -295,7 +295,8 @@ h2 {
     margin-top: 6.5rem
 }
 
-.list-articles .grid-la-list {
+.list-articles .grid-la-list,
+.list-articles .la-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -306,10 +307,16 @@ h2 {
     -ms-flex-align: center;
     align-items: center;
     max-width: 116rem;
-    margin: 0 auto
+    margin: 3rem auto 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
-.list-articles .grid-la-list .gla-item {
+.list-articles .grid-la-list .gla-item,
+.list-articles .grid-la-list .la-item,
+.list-articles .la-list .gla-item,
+.list-articles .la-list .la-item {
+    width: calc(100% * 1 / 3 - 3rem - .01px);
     -webkit-box-shadow: none;
     box-shadow: none;
     padding: 0;
@@ -320,23 +327,54 @@ h2 {
     margin-bottom: 5rem
 }
 
-.list-articles .grid-la-list .gla-item .gla-item-img {
+.list-articles .grid-la-list .gla-item .la-item-img,
+.list-articles .grid-la-list .gla-item .gla-item-img,
+.list-articles .grid-la-list .la-item .la-item-img,
+.list-articles .grid-la-list .la-item .gla-item-img,
+.list-articles .la-list .gla-item .la-item-img,
+.list-articles .la-list .gla-item .gla-item-img,
+.list-articles .la-list .la-item .la-item-img,
+.list-articles .la-list .la-item .gla-item-img {
     max-width: 90%;
-    margin-top: -5rem;
     width: 32rem;
-    border: 1rem solid white
+    border: 1rem solid white;
+    float: none;
+    margin: -5rem auto 0
 }
 
-.list-articles .grid-la-list .gla-item .gla-item-content {
+.list-articles .grid-la-list .gla-item .la-item-content,
+.list-articles .grid-la-list .gla-item .gla-item-content,
+.list-articles .grid-la-list .la-item .la-item-content,
+.list-articles .grid-la-list .la-item .gla-item-content,
+.list-articles .la-list .gla-item .la-item-content,
+.list-articles .la-list .gla-item .gla-item-content,
+.list-articles .la-list .la-item .la-item-content,
+.list-articles .la-list .la-item .gla-item-content {
     position: relative;
     padding: 1.5rem 3rem;
     bottom: 0;
     left: 0;
+    min-height: 22rem;
     right: 0;
-    min-height: 22rem
+    overflow: visible
 }
 
-.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-btn {
+.list-articles .grid-la-list .gla-item .la-item-content .la-item-btn,
+.list-articles .grid-la-list .gla-item .la-item-content .gla-item-btn,
+.list-articles .grid-la-list .gla-item .gla-item-content .la-item-btn,
+.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-btn,
+.list-articles .grid-la-list .la-item .la-item-content .la-item-btn,
+.list-articles .grid-la-list .la-item .la-item-content .gla-item-btn,
+.list-articles .grid-la-list .la-item .gla-item-content .la-item-btn,
+.list-articles .grid-la-list .la-item .gla-item-content .gla-item-btn,
+.list-articles .la-list .gla-item .la-item-content .la-item-btn,
+.list-articles .la-list .gla-item .la-item-content .gla-item-btn,
+.list-articles .la-list .gla-item .gla-item-content .la-item-btn,
+.list-articles .la-list .gla-item .gla-item-content .gla-item-btn,
+.list-articles .la-list .la-item .la-item-content .la-item-btn,
+.list-articles .la-list .la-item .la-item-content .gla-item-btn,
+.list-articles .la-list .la-item .gla-item-content .la-item-btn,
+.list-articles .la-list .la-item .gla-item-content .gla-item-btn {
     margin-top: auto;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
@@ -344,7 +382,38 @@ h2 {
     margin-bottom: -3.6rem
 }
 
-.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-btn .gla-btn-read-more {
+.list-articles .grid-la-list .gla-item .la-item-content .la-item-btn .link-read-more,
+.list-articles .grid-la-list .gla-item .la-item-content .la-item-btn .gla-btn-read-more,
+.list-articles .grid-la-list .gla-item .la-item-content .gla-item-btn .link-read-more,
+.list-articles .grid-la-list .gla-item .la-item-content .gla-item-btn .gla-btn-read-more,
+.list-articles .grid-la-list .gla-item .gla-item-content .la-item-btn .link-read-more,
+.list-articles .grid-la-list .gla-item .gla-item-content .la-item-btn .gla-btn-read-more,
+.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-btn .link-read-more,
+.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-btn .gla-btn-read-more,
+.list-articles .grid-la-list .la-item .la-item-content .la-item-btn .link-read-more,
+.list-articles .grid-la-list .la-item .la-item-content .la-item-btn .gla-btn-read-more,
+.list-articles .grid-la-list .la-item .la-item-content .gla-item-btn .link-read-more,
+.list-articles .grid-la-list .la-item .la-item-content .gla-item-btn .gla-btn-read-more,
+.list-articles .grid-la-list .la-item .gla-item-content .la-item-btn .link-read-more,
+.list-articles .grid-la-list .la-item .gla-item-content .la-item-btn .gla-btn-read-more,
+.list-articles .grid-la-list .la-item .gla-item-content .gla-item-btn .link-read-more,
+.list-articles .grid-la-list .la-item .gla-item-content .gla-item-btn .gla-btn-read-more,
+.list-articles .la-list .gla-item .la-item-content .la-item-btn .link-read-more,
+.list-articles .la-list .gla-item .la-item-content .la-item-btn .gla-btn-read-more,
+.list-articles .la-list .gla-item .la-item-content .gla-item-btn .link-read-more,
+.list-articles .la-list .gla-item .la-item-content .gla-item-btn .gla-btn-read-more,
+.list-articles .la-list .gla-item .gla-item-content .la-item-btn .link-read-more,
+.list-articles .la-list .gla-item .gla-item-content .la-item-btn .gla-btn-read-more,
+.list-articles .la-list .gla-item .gla-item-content .gla-item-btn .link-read-more,
+.list-articles .la-list .gla-item .gla-item-content .gla-item-btn .gla-btn-read-more,
+.list-articles .la-list .la-item .la-item-content .la-item-btn .link-read-more,
+.list-articles .la-list .la-item .la-item-content .la-item-btn .gla-btn-read-more,
+.list-articles .la-list .la-item .la-item-content .gla-item-btn .link-read-more,
+.list-articles .la-list .la-item .la-item-content .gla-item-btn .gla-btn-read-more,
+.list-articles .la-list .la-item .gla-item-content .la-item-btn .link-read-more,
+.list-articles .la-list .la-item .gla-item-content .la-item-btn .gla-btn-read-more,
+.list-articles .la-list .la-item .gla-item-content .gla-item-btn .link-read-more,
+.list-articles .la-list .la-item .gla-item-content .gla-item-btn .gla-btn-read-more {
     background-color: white;
     border: 0 none;
     text-transform: uppercase;
@@ -357,7 +426,38 @@ h2 {
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-btn .gla-btn-read-more::before {
+.list-articles .grid-la-list .gla-item .la-item-content .la-item-btn .link-read-more::before,
+.list-articles .grid-la-list .gla-item .la-item-content .la-item-btn .gla-btn-read-more::before,
+.list-articles .grid-la-list .gla-item .la-item-content .gla-item-btn .link-read-more::before,
+.list-articles .grid-la-list .gla-item .la-item-content .gla-item-btn .gla-btn-read-more::before,
+.list-articles .grid-la-list .gla-item .gla-item-content .la-item-btn .link-read-more::before,
+.list-articles .grid-la-list .gla-item .gla-item-content .la-item-btn .gla-btn-read-more::before,
+.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-btn .link-read-more::before,
+.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-btn .gla-btn-read-more::before,
+.list-articles .grid-la-list .la-item .la-item-content .la-item-btn .link-read-more::before,
+.list-articles .grid-la-list .la-item .la-item-content .la-item-btn .gla-btn-read-more::before,
+.list-articles .grid-la-list .la-item .la-item-content .gla-item-btn .link-read-more::before,
+.list-articles .grid-la-list .la-item .la-item-content .gla-item-btn .gla-btn-read-more::before,
+.list-articles .grid-la-list .la-item .gla-item-content .la-item-btn .link-read-more::before,
+.list-articles .grid-la-list .la-item .gla-item-content .la-item-btn .gla-btn-read-more::before,
+.list-articles .grid-la-list .la-item .gla-item-content .gla-item-btn .link-read-more::before,
+.list-articles .grid-la-list .la-item .gla-item-content .gla-item-btn .gla-btn-read-more::before,
+.list-articles .la-list .gla-item .la-item-content .la-item-btn .link-read-more::before,
+.list-articles .la-list .gla-item .la-item-content .la-item-btn .gla-btn-read-more::before,
+.list-articles .la-list .gla-item .la-item-content .gla-item-btn .link-read-more::before,
+.list-articles .la-list .gla-item .la-item-content .gla-item-btn .gla-btn-read-more::before,
+.list-articles .la-list .gla-item .gla-item-content .la-item-btn .link-read-more::before,
+.list-articles .la-list .gla-item .gla-item-content .la-item-btn .gla-btn-read-more::before,
+.list-articles .la-list .gla-item .gla-item-content .gla-item-btn .link-read-more::before,
+.list-articles .la-list .gla-item .gla-item-content .gla-item-btn .gla-btn-read-more::before,
+.list-articles .la-list .la-item .la-item-content .la-item-btn .link-read-more::before,
+.list-articles .la-list .la-item .la-item-content .la-item-btn .gla-btn-read-more::before,
+.list-articles .la-list .la-item .la-item-content .gla-item-btn .link-read-more::before,
+.list-articles .la-list .la-item .la-item-content .gla-item-btn .gla-btn-read-more::before,
+.list-articles .la-list .la-item .gla-item-content .la-item-btn .link-read-more::before,
+.list-articles .la-list .la-item .gla-item-content .la-item-btn .gla-btn-read-more::before,
+.list-articles .la-list .la-item .gla-item-content .gla-item-btn .link-read-more::before,
+.list-articles .la-list .la-item .gla-item-content .gla-item-btn .gla-btn-read-more::before {
     content: '›';
     display: inline-block;
     color: #C5143A;
@@ -368,7 +468,83 @@ h2 {
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-title {
+.list-articles .grid-la-list .gla-item .la-item-content .la-item-btn .link-read-more,
+.list-articles .grid-la-list .gla-item .la-item-content .gla-item-btn .link-read-more,
+.list-articles .grid-la-list .gla-item .gla-item-content .la-item-btn .link-read-more,
+.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-btn .link-read-more,
+.list-articles .grid-la-list .la-item .la-item-content .la-item-btn .link-read-more,
+.list-articles .grid-la-list .la-item .la-item-content .gla-item-btn .link-read-more,
+.list-articles .grid-la-list .la-item .gla-item-content .la-item-btn .link-read-more,
+.list-articles .grid-la-list .la-item .gla-item-content .gla-item-btn .link-read-more,
+.list-articles .la-list .gla-item .la-item-content .la-item-btn .link-read-more,
+.list-articles .la-list .gla-item .la-item-content .gla-item-btn .link-read-more,
+.list-articles .la-list .gla-item .gla-item-content .la-item-btn .link-read-more,
+.list-articles .la-list .gla-item .gla-item-content .gla-item-btn .link-read-more,
+.list-articles .la-list .la-item .la-item-content .la-item-btn .link-read-more,
+.list-articles .la-list .la-item .la-item-content .gla-item-btn .link-read-more,
+.list-articles .la-list .la-item .gla-item-content .la-item-btn .link-read-more,
+.list-articles .la-list .la-item .gla-item-content .gla-item-btn .link-read-more {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%)
+}
+
+.list-articles .grid-la-list .gla-item .la-item-content .la-item-btn .link-read-more:hover,
+.list-articles .grid-la-list .gla-item .la-item-content .gla-item-btn .link-read-more:hover,
+.list-articles .grid-la-list .gla-item .gla-item-content .la-item-btn .link-read-more:hover,
+.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-btn .link-read-more:hover,
+.list-articles .grid-la-list .la-item .la-item-content .la-item-btn .link-read-more:hover,
+.list-articles .grid-la-list .la-item .la-item-content .gla-item-btn .link-read-more:hover,
+.list-articles .grid-la-list .la-item .gla-item-content .la-item-btn .link-read-more:hover,
+.list-articles .grid-la-list .la-item .gla-item-content .gla-item-btn .link-read-more:hover,
+.list-articles .la-list .gla-item .la-item-content .la-item-btn .link-read-more:hover,
+.list-articles .la-list .gla-item .la-item-content .gla-item-btn .link-read-more:hover,
+.list-articles .la-list .gla-item .gla-item-content .la-item-btn .link-read-more:hover,
+.list-articles .la-list .gla-item .gla-item-content .gla-item-btn .link-read-more:hover,
+.list-articles .la-list .la-item .la-item-content .la-item-btn .link-read-more:hover,
+.list-articles .la-list .la-item .la-item-content .gla-item-btn .link-read-more:hover,
+.list-articles .la-list .la-item .gla-item-content .la-item-btn .link-read-more:hover,
+.list-articles .la-list .la-item .gla-item-content .gla-item-btn .link-read-more:hover {
+    color: #C5143A
+}
+
+.list-articles .grid-la-list .gla-item .la-item-content .la-item-btn .link-read-more:hover::before,
+.list-articles .grid-la-list .gla-item .la-item-content .gla-item-btn .link-read-more:hover::before,
+.list-articles .grid-la-list .gla-item .gla-item-content .la-item-btn .link-read-more:hover::before,
+.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-btn .link-read-more:hover::before,
+.list-articles .grid-la-list .la-item .la-item-content .la-item-btn .link-read-more:hover::before,
+.list-articles .grid-la-list .la-item .la-item-content .gla-item-btn .link-read-more:hover::before,
+.list-articles .grid-la-list .la-item .gla-item-content .la-item-btn .link-read-more:hover::before,
+.list-articles .grid-la-list .la-item .gla-item-content .gla-item-btn .link-read-more:hover::before,
+.list-articles .la-list .gla-item .la-item-content .la-item-btn .link-read-more:hover::before,
+.list-articles .la-list .gla-item .la-item-content .gla-item-btn .link-read-more:hover::before,
+.list-articles .la-list .gla-item .gla-item-content .la-item-btn .link-read-more:hover::before,
+.list-articles .la-list .gla-item .gla-item-content .gla-item-btn .link-read-more:hover::before,
+.list-articles .la-list .la-item .la-item-content .la-item-btn .link-read-more:hover::before,
+.list-articles .la-list .la-item .la-item-content .gla-item-btn .link-read-more:hover::before,
+.list-articles .la-list .la-item .gla-item-content .la-item-btn .link-read-more:hover::before,
+.list-articles .la-list .la-item .gla-item-content .gla-item-btn .link-read-more:hover::before {
+    margin-right: 0.1rem;
+    margin-left: 0.3rem
+}
+
+.list-articles .grid-la-list .gla-item .la-item-content .la-item-title,
+.list-articles .grid-la-list .gla-item .la-item-content .gla-item-title,
+.list-articles .grid-la-list .gla-item .gla-item-content .la-item-title,
+.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-title,
+.list-articles .grid-la-list .la-item .la-item-content .la-item-title,
+.list-articles .grid-la-list .la-item .la-item-content .gla-item-title,
+.list-articles .grid-la-list .la-item .gla-item-content .la-item-title,
+.list-articles .grid-la-list .la-item .gla-item-content .gla-item-title,
+.list-articles .la-list .gla-item .la-item-content .la-item-title,
+.list-articles .la-list .gla-item .la-item-content .gla-item-title,
+.list-articles .la-list .gla-item .gla-item-content .la-item-title,
+.list-articles .la-list .gla-item .gla-item-content .gla-item-title,
+.list-articles .la-list .la-item .la-item-content .la-item-title,
+.list-articles .la-list .la-item .la-item-content .gla-item-title,
+.list-articles .la-list .la-item .gla-item-content .la-item-title,
+.list-articles .la-list .la-item .gla-item-content .gla-item-title {
     text-align: left;
     color: #252525;
     font-size: 2.2rem;
@@ -376,39 +552,165 @@ h2 {
     margin-top: 0
 }
 
-.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-author {
+.list-articles .grid-la-list .gla-item .la-item-content .la-item-title:hover~.la-item-btn .link-read-more,
+.list-articles .grid-la-list .gla-item .la-item-content .gla-item-title:hover~.la-item-btn .link-read-more,
+.list-articles .grid-la-list .gla-item .gla-item-content .la-item-title:hover~.la-item-btn .link-read-more,
+.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-title:hover~.la-item-btn .link-read-more,
+.list-articles .grid-la-list .la-item .la-item-content .la-item-title:hover~.la-item-btn .link-read-more,
+.list-articles .grid-la-list .la-item .la-item-content .gla-item-title:hover~.la-item-btn .link-read-more,
+.list-articles .grid-la-list .la-item .gla-item-content .la-item-title:hover~.la-item-btn .link-read-more,
+.list-articles .grid-la-list .la-item .gla-item-content .gla-item-title:hover~.la-item-btn .link-read-more,
+.list-articles .la-list .gla-item .la-item-content .la-item-title:hover~.la-item-btn .link-read-more,
+.list-articles .la-list .gla-item .la-item-content .gla-item-title:hover~.la-item-btn .link-read-more,
+.list-articles .la-list .gla-item .gla-item-content .la-item-title:hover~.la-item-btn .link-read-more,
+.list-articles .la-list .gla-item .gla-item-content .gla-item-title:hover~.la-item-btn .link-read-more,
+.list-articles .la-list .la-item .la-item-content .la-item-title:hover~.la-item-btn .link-read-more,
+.list-articles .la-list .la-item .la-item-content .gla-item-title:hover~.la-item-btn .link-read-more,
+.list-articles .la-list .la-item .gla-item-content .la-item-title:hover~.la-item-btn .link-read-more,
+.list-articles .la-list .la-item .gla-item-content .gla-item-title:hover~.la-item-btn .link-read-more {
+    color: #C5143A
+}
+
+.list-articles .grid-la-list .gla-item .la-item-content .la-item-title:hover~.la-item-btn .link-read-more::before,
+.list-articles .grid-la-list .gla-item .la-item-content .gla-item-title:hover~.la-item-btn .link-read-more::before,
+.list-articles .grid-la-list .gla-item .gla-item-content .la-item-title:hover~.la-item-btn .link-read-more::before,
+.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-title:hover~.la-item-btn .link-read-more::before,
+.list-articles .grid-la-list .la-item .la-item-content .la-item-title:hover~.la-item-btn .link-read-more::before,
+.list-articles .grid-la-list .la-item .la-item-content .gla-item-title:hover~.la-item-btn .link-read-more::before,
+.list-articles .grid-la-list .la-item .gla-item-content .la-item-title:hover~.la-item-btn .link-read-more::before,
+.list-articles .grid-la-list .la-item .gla-item-content .gla-item-title:hover~.la-item-btn .link-read-more::before,
+.list-articles .la-list .gla-item .la-item-content .la-item-title:hover~.la-item-btn .link-read-more::before,
+.list-articles .la-list .gla-item .la-item-content .gla-item-title:hover~.la-item-btn .link-read-more::before,
+.list-articles .la-list .gla-item .gla-item-content .la-item-title:hover~.la-item-btn .link-read-more::before,
+.list-articles .la-list .gla-item .gla-item-content .gla-item-title:hover~.la-item-btn .link-read-more::before,
+.list-articles .la-list .la-item .la-item-content .la-item-title:hover~.la-item-btn .link-read-more::before,
+.list-articles .la-list .la-item .la-item-content .gla-item-title:hover~.la-item-btn .link-read-more::before,
+.list-articles .la-list .la-item .gla-item-content .la-item-title:hover~.la-item-btn .link-read-more::before,
+.list-articles .la-list .la-item .gla-item-content .gla-item-title:hover~.la-item-btn .link-read-more::before {
+    margin-right: 0.1rem;
+    margin-left: 0.3rem
+}
+
+.list-articles .grid-la-list .gla-item .la-item-content .la-item-title a,
+.list-articles .grid-la-list .gla-item .la-item-content .gla-item-title a,
+.list-articles .grid-la-list .gla-item .gla-item-content .la-item-title a,
+.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-title a,
+.list-articles .grid-la-list .la-item .la-item-content .la-item-title a,
+.list-articles .grid-la-list .la-item .la-item-content .gla-item-title a,
+.list-articles .grid-la-list .la-item .gla-item-content .la-item-title a,
+.list-articles .grid-la-list .la-item .gla-item-content .gla-item-title a,
+.list-articles .la-list .gla-item .la-item-content .la-item-title a,
+.list-articles .la-list .gla-item .la-item-content .gla-item-title a,
+.list-articles .la-list .gla-item .gla-item-content .la-item-title a,
+.list-articles .la-list .gla-item .gla-item-content .gla-item-title a,
+.list-articles .la-list .la-item .la-item-content .la-item-title a,
+.list-articles .la-list .la-item .la-item-content .gla-item-title a,
+.list-articles .la-list .la-item .gla-item-content .la-item-title a,
+.list-articles .la-list .la-item .gla-item-content .gla-item-title a {
+    color: #252525;
+    text-decoration: none
+}
+
+.list-articles .grid-la-list .gla-item .la-item-content .la-item-author,
+.list-articles .grid-la-list .gla-item .la-item-content .gla-item-author,
+.list-articles .grid-la-list .gla-item .gla-item-content .la-item-author,
+.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-author,
+.list-articles .grid-la-list .la-item .la-item-content .la-item-author,
+.list-articles .grid-la-list .la-item .la-item-content .gla-item-author,
+.list-articles .grid-la-list .la-item .gla-item-content .la-item-author,
+.list-articles .grid-la-list .la-item .gla-item-content .gla-item-author,
+.list-articles .la-list .gla-item .la-item-content .la-item-author,
+.list-articles .la-list .gla-item .la-item-content .gla-item-author,
+.list-articles .la-list .gla-item .gla-item-content .la-item-author,
+.list-articles .la-list .gla-item .gla-item-content .gla-item-author,
+.list-articles .la-list .la-item .la-item-content .la-item-author,
+.list-articles .la-list .la-item .la-item-content .gla-item-author,
+.list-articles .la-list .la-item .gla-item-content .la-item-author,
+.list-articles .la-list .la-item .gla-item-content .gla-item-author {
     display: none
 }
 
-.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-desc {
+.list-articles .grid-la-list .gla-item .la-item-content .la-item-desc,
+.list-articles .grid-la-list .gla-item .la-item-content .gla-item-desc,
+.list-articles .grid-la-list .gla-item .gla-item-content .la-item-desc,
+.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-desc,
+.list-articles .grid-la-list .la-item .la-item-content .la-item-desc,
+.list-articles .grid-la-list .la-item .la-item-content .gla-item-desc,
+.list-articles .grid-la-list .la-item .gla-item-content .la-item-desc,
+.list-articles .grid-la-list .la-item .gla-item-content .gla-item-desc,
+.list-articles .la-list .gla-item .la-item-content .la-item-desc,
+.list-articles .la-list .gla-item .la-item-content .gla-item-desc,
+.list-articles .la-list .gla-item .gla-item-content .la-item-desc,
+.list-articles .la-list .gla-item .gla-item-content .gla-item-desc,
+.list-articles .la-list .la-item .la-item-content .la-item-desc,
+.list-articles .la-list .la-item .la-item-content .gla-item-desc,
+.list-articles .la-list .la-item .gla-item-content .la-item-desc,
+.list-articles .la-list .la-item .gla-item-content .gla-item-desc {
     text-align: left;
     font-size: 1.6rem;
     line-height: 2.7rem;
     color: #a0a0a0;
-    margin-top: 1rem
+    margin-top: 1rem;
+    display: block
 }
 
-.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-desc strong {
+.list-articles .grid-la-list .gla-item .la-item-content .la-item-desc strong,
+.list-articles .grid-la-list .gla-item .la-item-content .gla-item-desc strong,
+.list-articles .grid-la-list .gla-item .gla-item-content .la-item-desc strong,
+.list-articles .grid-la-list .gla-item .gla-item-content .gla-item-desc strong,
+.list-articles .grid-la-list .la-item .la-item-content .la-item-desc strong,
+.list-articles .grid-la-list .la-item .la-item-content .gla-item-desc strong,
+.list-articles .grid-la-list .la-item .gla-item-content .la-item-desc strong,
+.list-articles .grid-la-list .la-item .gla-item-content .gla-item-desc strong,
+.list-articles .la-list .gla-item .la-item-content .la-item-desc strong,
+.list-articles .la-list .gla-item .la-item-content .gla-item-desc strong,
+.list-articles .la-list .gla-item .gla-item-content .la-item-desc strong,
+.list-articles .la-list .gla-item .gla-item-content .gla-item-desc strong,
+.list-articles .la-list .la-item .la-item-content .la-item-desc strong,
+.list-articles .la-list .la-item .la-item-content .gla-item-desc strong,
+.list-articles .la-list .la-item .gla-item-content .la-item-desc strong,
+.list-articles .la-list .la-item .gla-item-content .gla-item-desc strong {
     color: #a0a0a0;
     font-family: "Roboto-light", sans-serif;
     font-weight: normal
+}
+
+.list-articles .grid-la-list .gla-item .la-item-content,
+.list-articles .grid-la-list .la-item .la-item-content,
+.list-articles .la-list .gla-item .la-item-content,
+.list-articles .la-list .la-item .la-item-content {
+    min-height: 20rem
+}
+
+.list-articles .la-list {
+    margin-top: 7rem
+}
+
+.content378859 .intro {
+    display: none
 }
 
 [class*="grid-"]>* {
     width: calc(100% * 1 / 3 - 3rem - .01px)
 }
 
+.la-item>a:hover .la-item-content,
 .gla-item>a:hover .gla-item-content,
+.la-item>a:focus .la-item-content,
 .gla-item>a:focus .gla-item-content {
     background-color: transparent
 }
 
+.list-articles .la-list .la-item>a:hover .la-item-btn .la-btn-read-more,
 .list-articles .grid-la-list .gla-item>a:hover .gla-item-btn .gla-btn-read-more,
+.list-articles .la-list .la-item>a:focus .la-item-btn .la-btn-read-more,
 .list-articles .grid-la-list .gla-item>a:focus .gla-item-btn .gla-btn-read-more {
     color: #C5143A
 }
 
+.list-articles .la-list .la-item>a:hover .la-item-btn .la-btn-read-more::before,
 .list-articles .grid-la-list .gla-item>a:hover .gla-item-btn .gla-btn-read-more::before,
+.list-articles .la-list .la-item>a:focus .la-item-btn .la-btn-read-more::before,
 .list-articles .grid-la-list .gla-item>a:focus .gla-item-btn .gla-btn-read-more::before {
     margin-right: 0.1rem;
     margin-left: 0.3rem
@@ -1272,6 +1574,8 @@ body.front .edito.delegate,
 body.front .edito.sponsor,
 body:not(.front).article .edito.delegate,
 body:not(.front).article .edito.sponsor,
+body:not(.front).article_list .edito.delegate,
+body:not(.front).article_list .edito.sponsor,
 body:not(.front).page-rubric .edito.delegate,
 body:not(.front).page-rubric .edito.sponsor {
     margin: 0 !important;
@@ -1285,6 +1589,8 @@ body.front .edito.delegate::before,
 body.front .edito.sponsor::before,
 body:not(.front).article .edito.delegate::before,
 body:not(.front).article .edito.sponsor::before,
+body:not(.front).article_list .edito.delegate::before,
+body:not(.front).article_list .edito.sponsor::before,
 body:not(.front).page-rubric .edito.delegate::before,
 body:not(.front).page-rubric .edito.sponsor::before {
     display: none !important
@@ -1294,6 +1600,8 @@ body.front .edito.delegate .inside,
 body.front .edito.sponsor .inside,
 body:not(.front).article .edito.delegate .inside,
 body:not(.front).article .edito.sponsor .inside,
+body:not(.front).article_list .edito.delegate .inside,
+body:not(.front).article_list .edito.sponsor .inside,
 body:not(.front).page-rubric .edito.delegate .inside,
 body:not(.front).page-rubric .edito.sponsor .inside {
     position: absolute;
@@ -1321,6 +1629,8 @@ body.front .edito.delegate .block-title,
 body.front .edito.sponsor .block-title,
 body:not(.front).article .edito.delegate .block-title,
 body:not(.front).article .edito.sponsor .block-title,
+body:not(.front).article_list .edito.delegate .block-title,
+body:not(.front).article_list .edito.sponsor .block-title,
 body:not(.front).page-rubric .edito.delegate .block-title,
 body:not(.front).page-rubric .edito.sponsor .block-title {
     border: 0 none;
@@ -1333,6 +1643,8 @@ body.front .edito.delegate .block-title+p,
 body.front .edito.sponsor .block-title+p,
 body:not(.front).article .edito.delegate .block-title+p,
 body:not(.front).article .edito.sponsor .block-title+p,
+body:not(.front).article_list .edito.delegate .block-title+p,
+body:not(.front).article_list .edito.sponsor .block-title+p,
 body:not(.front).page-rubric .edito.delegate .block-title+p,
 body:not(.front).page-rubric .edito.sponsor .block-title+p {
     color: #a0a0a0;
@@ -1344,6 +1656,8 @@ body.front .edito.delegate h3,
 body.front .edito.sponsor h3,
 body:not(.front).article .edito.delegate h3,
 body:not(.front).article .edito.sponsor h3,
+body:not(.front).article_list .edito.delegate h3,
+body:not(.front).article_list .edito.sponsor h3,
 body:not(.front).page-rubric .edito.delegate h3,
 body:not(.front).page-rubric .edito.sponsor h3 {
     color: white;
@@ -1357,6 +1671,7 @@ body:not(.front).page-rubric .edito.sponsor h3 {
 
 body.front .edito.delegate,
 body:not(.front).article .edito.delegate,
+body:not(.front).article_list .edito.delegate,
 body:not(.front).page-rubric .edito.delegate {
     background-color: #252525 !important;
     background-image: url("/theme/trustech_desktop_git/img/bg-delegate.jpg");
@@ -1368,6 +1683,7 @@ body:not(.front).page-rubric .edito.delegate {
 
 body.front .edito.delegate .inside,
 body:not(.front).article .edito.delegate .inside,
+body:not(.front).article_list .edito.delegate .inside,
 body:not(.front).page-rubric .edito.delegate .inside {
     background-image: url("/theme/trustech_desktop_git/img/plexus-delegate.svg");
     background-repeat: no-repeat;
@@ -1377,12 +1693,14 @@ body:not(.front).page-rubric .edito.delegate .inside {
 
 body.front .edito.delegate .block-title+p,
 body:not(.front).article .edito.delegate .block-title+p,
+body:not(.front).article_list .edito.delegate .block-title+p,
 body:not(.front).page-rubric .edito.delegate .block-title+p {
     color: #a0a0a0
 }
 
 body.front .edito.sponsor,
 body:not(.front).article .edito.sponsor,
+body:not(.front).article_list .edito.sponsor,
 body:not(.front).page-rubric .edito.sponsor {
     background-color: #C5143A !important;
     background-image: url("/theme/trustech_desktop_git/img/bg-sponsor.jpg");
@@ -1394,6 +1712,7 @@ body:not(.front).page-rubric .edito.sponsor {
 
 body.front .edito.sponsor .inside,
 body:not(.front).article .edito.sponsor .inside,
+body:not(.front).article_list .edito.sponsor .inside,
 body:not(.front).page-rubric .edito.sponsor .inside {
     background-image: url("/theme/trustech_desktop_git/img/plexus-sponsor.svg");
     background-repeat: no-repeat;
@@ -1403,12 +1722,14 @@ body:not(.front).page-rubric .edito.sponsor .inside {
 
 body.front .edito.sponsor .block-title+p,
 body:not(.front).article .edito.sponsor .block-title+p,
+body:not(.front).article_list .edito.sponsor .block-title+p,
 body:not(.front).page-rubric .edito.sponsor .block-title+p {
     color: #F66C89
 }
 
 body.front .edito.sponsor .edito-item-btn a,
 body:not(.front).article .edito.sponsor .edito-item-btn a,
+body:not(.front).article_list .edito.sponsor .edito-item-btn a,
 body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     background-color: #252525;
     border-color: #252525
@@ -2047,12 +2368,14 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
 }
 
 body:not(.front).article .intro-attendees,
+body:not(.front).article_list .intro-attendees,
 body:not(.front).page-rubric .intro-attendees {
     text-align: center;
     padding: 6rem 0 4.5rem 0
 }
 
 body:not(.front).article .intro-attendees h2,
+body:not(.front).article_list .intro-attendees h2,
 body:not(.front).page-rubric .intro-attendees h2 {
     font-size: 4rem;
     line-height: 5rem;
@@ -2062,6 +2385,7 @@ body:not(.front).page-rubric .intro-attendees h2 {
 }
 
 body:not(.front).article .intro-attendees .intro-img,
+body:not(.front).article_list .intro-attendees .intro-img,
 body:not(.front).page-rubric .intro-attendees .intro-img {
     position: relative;
     margin: 0 auto;
@@ -2071,18 +2395,22 @@ body:not(.front).page-rubric .intro-attendees .intro-img {
 }
 
 body:not(.front).article .intro-attendees .intro-img .wrap,
+body:not(.front).article_list .intro-attendees .intro-img .wrap,
 body:not(.front).page-rubric .intro-attendees .intro-img .wrap {
     position: relative;
     max-width: 92rem
 }
 
 body:not(.front).article .intro-attendees .intro-img .wrap .intro-img-content,
+body:not(.front).article_list .intro-attendees .intro-img .wrap .intro-img-content,
 body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-content {
     background-color: white
 }
 
 body:not(.front).article .intro-attendees .intro-img .wrap .intro-img-content::before,
 body:not(.front).article .intro-attendees .intro-img .wrap .intro-img-content::after,
+body:not(.front).article_list .intro-attendees .intro-img .wrap .intro-img-content::before,
+body:not(.front).article_list .intro-attendees .intro-img .wrap .intro-img-content::after,
 body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-content::before,
 body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-content::after {
     content: '';
@@ -2101,16 +2429,19 @@ body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-conten
 }
 
 body:not(.front).article .intro-attendees .intro-img .wrap .intro-img-content::before,
+body:not(.front).article_list .intro-attendees .intro-img .wrap .intro-img-content::before,
 body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-content::before {
     left: 0
 }
 
 body:not(.front).article .intro-attendees .intro-img .wrap .intro-img-content::after,
+body:not(.front).article_list .intro-attendees .intro-img .wrap .intro-img-content::after,
 body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-content::after {
     right: 0
 }
 
 body:not(.front).article .intro-attendees .intro-img .wrap .intro-img-content img,
+body:not(.front).article_list .intro-attendees .intro-img .wrap .intro-img-content img,
 body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-content img {
     width: 75%;
     z-index: 1;
@@ -2118,6 +2449,7 @@ body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-conten
 }
 
 body:not(.front).article .intro-attendees .intro-img .wrap .intro-img-content .intro-bg,
+body:not(.front).article_list .intro-attendees .intro-img .wrap .intro-img-content .intro-bg,
 body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-content .intro-bg {
     background-color: #C5143A;
     width: 85%;
@@ -2132,6 +2464,7 @@ body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-conten
 }
 
 body:not(.front).article h3,
+body:not(.front).article_list h3,
 body:not(.front).page-rubric h3 {
     font-size: 3.5rem;
     line-height: 4.2rem;
@@ -2144,6 +2477,7 @@ body:not(.front).page-rubric h3 {
 }
 
 body:not(.front).article h3.text-center .title-deco,
+body:not(.front).article_list h3.text-center .title-deco,
 body:not(.front).page-rubric h3.text-center .title-deco {
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -2152,11 +2486,13 @@ body:not(.front).page-rubric h3.text-center .title-deco {
 }
 
 body:not(.front).article h3+h4,
+body:not(.front).article_list h3+h4,
 body:not(.front).page-rubric h3+h4 {
     margin-top: -3rem
 }
 
 body:not(.front).article h3 .title-deco,
+body:not(.front).article_list h3 .title-deco,
 body:not(.front).page-rubric h3 .title-deco {
     color: #f5f5f5;
     font-size: 9rem;
@@ -2169,23 +2505,27 @@ body:not(.front).page-rubric h3 .title-deco {
 }
 
 body:not(.front).article h3 .title-txt,
+body:not(.front).article_list h3 .title-txt,
 body:not(.front).page-rubric h3 .title-txt {
     position: relative;
     z-index: 2
 }
 
 body:not(.front).article .text-right h3 .title-deco,
+body:not(.front).article_list .text-right h3 .title-deco,
 body:not(.front).page-rubric .text-right h3 .title-deco {
     left: auto;
     right: 0
 }
 
 body:not(.front).article .list-btn,
+body:not(.front).article_list .list-btn,
 body:not(.front).page-rubric .list-btn {
     margin: 6.5rem auto
 }
 
 body:not(.front).article #zone1 .main-navigation,
+body:not(.front).article_list #zone1 .main-navigation,
 body:not(.front).page-rubric #zone1 .main-navigation {
     position: absolute;
     width: 116rem;
@@ -2198,11 +2538,13 @@ body:not(.front).page-rubric #zone1 .main-navigation {
 }
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line {
     border: 0 none
 }
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -2214,16 +2556,19 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu {
 }
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu::before,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu::before,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu::before {
     display: none
 }
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu::after,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu::after,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu::after {
     display: none
 }
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
@@ -2233,6 +2578,7 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-
 }
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link {
     padding: 1.5rem 3rem;
     min-height: 8.4rem;
@@ -2249,6 +2595,7 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-
 }
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link::before,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link::before,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link::before {
     content: "";
     display: inline-block;
@@ -2270,6 +2617,8 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus,
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover {
     background-color: white
@@ -2277,6 +2626,8 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus::before,
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover::before,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus::before,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover::before,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus::before,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover::before {
     background-position: -100% 0;
@@ -2285,23 +2636,28 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus .mn-link-text,
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover .mn-link-text,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus .mn-link-text,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover .mn-link-text,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus .mn-link-text,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover .mn-link-text {
     color: #252525
 }
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active {
     background-color: #f5f5f5
 }
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active::before,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active::before,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active::before {
     background-position: -100% 0;
     background-color: #C5143A
 }
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active .mn-link-text,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active .mn-link-text,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active .mn-link-text {
     font-family: "Roboto-bold", sans-serif;
     color: #252525;
@@ -2309,6 +2665,7 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-
 }
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text {
     text-transform: none;
     font-family: "Roboto-light", sans-serif;
@@ -2319,6 +2676,7 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-
 }
 
 body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text::before,
+body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text::before,
 body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text::before {
     display: none
 }

@@ -1141,7 +1141,7 @@ abbr[title] {
     position: absolute;
     top: 13rem;
     left: 0;
-    z-index: 2;
+    z-index: 4;
     width: 100%;
     text-align: center
 }
@@ -1576,6 +1576,10 @@ body:not(.front).article .edito.delegate,
 body:not(.front).article .edito.sponsor,
 body:not(.front).article_list .edito.delegate,
 body:not(.front).article_list .edito.sponsor,
+body:not(.front).catalogue .edito.delegate,
+body:not(.front).catalogue .edito.sponsor,
+body:not(.front).partner .edito.delegate,
+body:not(.front).partner .edito.sponsor,
 body:not(.front).page-rubric .edito.delegate,
 body:not(.front).page-rubric .edito.sponsor {
     margin: 0 !important;
@@ -1591,6 +1595,10 @@ body:not(.front).article .edito.delegate::before,
 body:not(.front).article .edito.sponsor::before,
 body:not(.front).article_list .edito.delegate::before,
 body:not(.front).article_list .edito.sponsor::before,
+body:not(.front).catalogue .edito.delegate::before,
+body:not(.front).catalogue .edito.sponsor::before,
+body:not(.front).partner .edito.delegate::before,
+body:not(.front).partner .edito.sponsor::before,
 body:not(.front).page-rubric .edito.delegate::before,
 body:not(.front).page-rubric .edito.sponsor::before {
     display: none !important
@@ -1602,6 +1610,10 @@ body:not(.front).article .edito.delegate .inside,
 body:not(.front).article .edito.sponsor .inside,
 body:not(.front).article_list .edito.delegate .inside,
 body:not(.front).article_list .edito.sponsor .inside,
+body:not(.front).catalogue .edito.delegate .inside,
+body:not(.front).catalogue .edito.sponsor .inside,
+body:not(.front).partner .edito.delegate .inside,
+body:not(.front).partner .edito.sponsor .inside,
 body:not(.front).page-rubric .edito.delegate .inside,
 body:not(.front).page-rubric .edito.sponsor .inside {
     position: absolute;
@@ -1631,6 +1643,10 @@ body:not(.front).article .edito.delegate .block-title,
 body:not(.front).article .edito.sponsor .block-title,
 body:not(.front).article_list .edito.delegate .block-title,
 body:not(.front).article_list .edito.sponsor .block-title,
+body:not(.front).catalogue .edito.delegate .block-title,
+body:not(.front).catalogue .edito.sponsor .block-title,
+body:not(.front).partner .edito.delegate .block-title,
+body:not(.front).partner .edito.sponsor .block-title,
 body:not(.front).page-rubric .edito.delegate .block-title,
 body:not(.front).page-rubric .edito.sponsor .block-title {
     border: 0 none;
@@ -1645,6 +1661,10 @@ body:not(.front).article .edito.delegate .block-title+p,
 body:not(.front).article .edito.sponsor .block-title+p,
 body:not(.front).article_list .edito.delegate .block-title+p,
 body:not(.front).article_list .edito.sponsor .block-title+p,
+body:not(.front).catalogue .edito.delegate .block-title+p,
+body:not(.front).catalogue .edito.sponsor .block-title+p,
+body:not(.front).partner .edito.delegate .block-title+p,
+body:not(.front).partner .edito.sponsor .block-title+p,
 body:not(.front).page-rubric .edito.delegate .block-title+p,
 body:not(.front).page-rubric .edito.sponsor .block-title+p {
     color: #a0a0a0;
@@ -1658,6 +1678,10 @@ body:not(.front).article .edito.delegate h3,
 body:not(.front).article .edito.sponsor h3,
 body:not(.front).article_list .edito.delegate h3,
 body:not(.front).article_list .edito.sponsor h3,
+body:not(.front).catalogue .edito.delegate h3,
+body:not(.front).catalogue .edito.sponsor h3,
+body:not(.front).partner .edito.delegate h3,
+body:not(.front).partner .edito.sponsor h3,
 body:not(.front).page-rubric .edito.delegate h3,
 body:not(.front).page-rubric .edito.sponsor h3 {
     color: white;
@@ -1672,6 +1696,8 @@ body:not(.front).page-rubric .edito.sponsor h3 {
 body.front .edito.delegate,
 body:not(.front).article .edito.delegate,
 body:not(.front).article_list .edito.delegate,
+body:not(.front).catalogue .edito.delegate,
+body:not(.front).partner .edito.delegate,
 body:not(.front).page-rubric .edito.delegate {
     background-color: #252525 !important;
     background-image: url("/theme/trustech_desktop_git/img/bg-delegate.jpg");
@@ -1684,6 +1710,8 @@ body:not(.front).page-rubric .edito.delegate {
 body.front .edito.delegate .inside,
 body:not(.front).article .edito.delegate .inside,
 body:not(.front).article_list .edito.delegate .inside,
+body:not(.front).catalogue .edito.delegate .inside,
+body:not(.front).partner .edito.delegate .inside,
 body:not(.front).page-rubric .edito.delegate .inside {
     background-image: url("/theme/trustech_desktop_git/img/plexus-delegate.svg");
     background-repeat: no-repeat;
@@ -1694,6 +1722,8 @@ body:not(.front).page-rubric .edito.delegate .inside {
 body.front .edito.delegate .block-title+p,
 body:not(.front).article .edito.delegate .block-title+p,
 body:not(.front).article_list .edito.delegate .block-title+p,
+body:not(.front).catalogue .edito.delegate .block-title+p,
+body:not(.front).partner .edito.delegate .block-title+p,
 body:not(.front).page-rubric .edito.delegate .block-title+p {
     color: #a0a0a0
 }
@@ -1701,6 +1731,8 @@ body:not(.front).page-rubric .edito.delegate .block-title+p {
 body.front .edito.sponsor,
 body:not(.front).article .edito.sponsor,
 body:not(.front).article_list .edito.sponsor,
+body:not(.front).catalogue .edito.sponsor,
+body:not(.front).partner .edito.sponsor,
 body:not(.front).page-rubric .edito.sponsor {
     background-color: #C5143A !important;
     background-image: url("/theme/trustech_desktop_git/img/bg-sponsor.jpg");
@@ -1713,6 +1745,8 @@ body:not(.front).page-rubric .edito.sponsor {
 body.front .edito.sponsor .inside,
 body:not(.front).article .edito.sponsor .inside,
 body:not(.front).article_list .edito.sponsor .inside,
+body:not(.front).catalogue .edito.sponsor .inside,
+body:not(.front).partner .edito.sponsor .inside,
 body:not(.front).page-rubric .edito.sponsor .inside {
     background-image: url("/theme/trustech_desktop_git/img/plexus-sponsor.svg");
     background-repeat: no-repeat;
@@ -1723,6 +1757,8 @@ body:not(.front).page-rubric .edito.sponsor .inside {
 body.front .edito.sponsor .block-title+p,
 body:not(.front).article .edito.sponsor .block-title+p,
 body:not(.front).article_list .edito.sponsor .block-title+p,
+body:not(.front).catalogue .edito.sponsor .block-title+p,
+body:not(.front).partner .edito.sponsor .block-title+p,
 body:not(.front).page-rubric .edito.sponsor .block-title+p {
     color: #F66C89
 }
@@ -1730,6 +1766,8 @@ body:not(.front).page-rubric .edito.sponsor .block-title+p {
 body.front .edito.sponsor .edito-item-btn a,
 body:not(.front).article .edito.sponsor .edito-item-btn a,
 body:not(.front).article_list .edito.sponsor .edito-item-btn a,
+body:not(.front).catalogue .edito.sponsor .edito-item-btn a,
+body:not(.front).partner .edito.sponsor .edito-item-btn a,
 body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     background-color: #252525;
     border-color: #252525
@@ -2692,6 +2730,35 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-
 .deco-link img {
     width: .5rem;
     height: 4rem
+}
+
+.page-rubric.content379634 #zone2::before {
+    background-image: url("/theme/trustech_desktop_git/img/bg-highlights-trustech.jpg");
+    background-position: top -2rem center
+}
+
+.page-rubric.content379521 #zone2::before {
+    background-image: url("/theme/trustech_desktop_git/img/bg-delegates-trustech.jpg")
+}
+
+.page-rubric.content379604 #zone2::before {
+    background-image: url("/theme/trustech_desktop_git/img/bg-banks-trustech.jpg")
+}
+
+.page-rubric.content379619 #zone2::before {
+    background-image: url("/theme/trustech_desktop_git/img/bg-security-trustech.jpg")
+}
+
+.page-rubric.content379522 #zone2::before {
+    background-image: url("/theme/trustech_desktop_git/img/bg-governments-trustech.jpg")
+}
+
+.page-rubric.content372362 #zone2::before {
+    background-image: url("/theme/trustech_desktop_git/img/bg-getyourpass-trustech.jpg")
+}
+
+.page-rubric.content379639 #zone2::before {
+    background-image: url("/theme/trustech_desktop_git/img/bg-book-trustech.jpg")
 }
 
 .page-rubric #zone1 {

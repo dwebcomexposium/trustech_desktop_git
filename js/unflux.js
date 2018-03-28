@@ -4,7 +4,7 @@
 
         init : function(){
 
-            this.tabSLider();
+            this.blocsWhyattend();
             this.popin();
 
         },
@@ -23,6 +23,14 @@
             });
         },
 
+        blocsWhyattend : function(){
+
+            $(".category-list a").hover(function(){
+                $(".category-list a").removeClass('active');
+                $(this).addClass('active');
+            });
+
+        },
 
         tabSLider : function(){
 

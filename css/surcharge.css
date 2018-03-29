@@ -1,6 +1,5 @@
 @charset "utf-8";
 /* CSS Document - Surcharge css Agence */
-
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box
@@ -884,7 +883,7 @@ h2 {
 #cxpmClientAccountWidget {
     top: -.5rem;
     line-height: 0;
-    right: 13rem
+    right: 16rem
 }
 
 #cxpmClientAccountWidget .widget-text {
@@ -1083,7 +1082,7 @@ h2 {
 
 .lang-switcher {
     background-color: transparent;
-    right: 29.5rem;
+    right: 33rem;
     top: -0.2rem
 }
 
@@ -2087,6 +2086,10 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     fill: #252525
 }
 
+.site-banner.is-stuck .nav-social li a svg path {
+    fill: #252525
+}
+
 .site-banner .supheader {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 1rem;
@@ -2220,7 +2223,8 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
 .site-banner .nav-social li a svg path {
     -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    fill: white
 }
 
 .site-footer {
@@ -2266,9 +2270,9 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     -ms-flex-align: start;
     align-items: flex-start;
     margin: 0;
-    -ms-flex-preferred-size: calc(.85 * 116rem);
-    flex-basis: calc(.85 * 116rem);
-    width: calc(.85 * 116rem)
+    -ms-flex-preferred-size: calc(.8 * 116rem);
+    flex-basis: calc(.8 * 116rem);
+    width: calc(.8 * 116rem)
 }
 
 .site-footer>.inside .quicklinks:nth-child(4) {
@@ -2292,6 +2296,21 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     text-transform: uppercase;
     font-family: "Roboto-light", sans-serif;
     color: #a0a0a0
+}
+
+.site-footer>.inside .quicklinks:nth-child(7) .ql-list .ql-item:first-child {
+    vertical-align: middle
+}
+
+.site-footer>.inside .quicklinks:nth-child(7) .ql-list .ql-item:first-child a {
+    text-indent: -9999px;
+    background-image: url(/theme/trustech_desktop_git/img/logo-comexposium.jpg);
+    width: 18rem;
+    height: 4rem;
+    background-size: 18rem;
+    margin-left: -1rem;
+    background-repeat: no-repeat;
+    margin-top: -0.4rem
 }
 
 .site-footer>.inside .quicklinks .btn-primary {
@@ -2321,9 +2340,9 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
 }
 
 .site-footer>.inside .footer-social {
-    -ms-flex-preferred-size: calc(.15 * 116rem);
-    flex-basis: calc(.15 * 116rem);
-    width: calc(.15 * 116rem);
+    -ms-flex-preferred-size: calc(.2 * 116rem);
+    flex-basis: calc(.2 * 116rem);
+    width: calc(.2 * 116rem);
     padding: 4rem 0 2rem;
     border-bottom: 1px solid #E4E4E4;
     -webkit-column-break-after: always;
@@ -2405,16 +2424,12 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-body:not(.front).article .intro-attendees,
-body:not(.front).article_list .intro-attendees,
-body:not(.front).page-rubric .intro-attendees {
+body:not(.front) .intro-attendees {
     text-align: center;
     padding: 6rem 0 4.5rem 0
 }
 
-body:not(.front).article .intro-attendees h2,
-body:not(.front).article_list .intro-attendees h2,
-body:not(.front).page-rubric .intro-attendees h2 {
+body:not(.front) .intro-attendees h2 {
     font-size: 4rem;
     line-height: 5rem;
     text-transform: none;
@@ -2422,9 +2437,7 @@ body:not(.front).page-rubric .intro-attendees h2 {
     margin-top: 1.7rem
 }
 
-body:not(.front).article .intro-attendees .intro-img,
-body:not(.front).article_list .intro-attendees .intro-img,
-body:not(.front).page-rubric .intro-attendees .intro-img {
+body:not(.front) .intro-attendees .intro-img {
     position: relative;
     margin: 0 auto;
     background-image: url(/theme/trustech_desktop_git/img/pixel-grey.jpg);
@@ -2432,25 +2445,17 @@ body:not(.front).page-rubric .intro-attendees .intro-img {
     background-position: 0 50%
 }
 
-body:not(.front).article .intro-attendees .intro-img .wrap,
-body:not(.front).article_list .intro-attendees .intro-img .wrap,
-body:not(.front).page-rubric .intro-attendees .intro-img .wrap {
+body:not(.front) .intro-attendees .intro-img .wrap {
     position: relative;
     max-width: 92rem
 }
 
-body:not(.front).article .intro-attendees .intro-img .wrap .intro-img-content,
-body:not(.front).article_list .intro-attendees .intro-img .wrap .intro-img-content,
-body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-content {
+body:not(.front) .intro-attendees .intro-img .wrap .intro-img-content {
     background-color: white
 }
 
-body:not(.front).article .intro-attendees .intro-img .wrap .intro-img-content::before,
-body:not(.front).article .intro-attendees .intro-img .wrap .intro-img-content::after,
-body:not(.front).article_list .intro-attendees .intro-img .wrap .intro-img-content::before,
-body:not(.front).article_list .intro-attendees .intro-img .wrap .intro-img-content::after,
-body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-content::before,
-body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-content::after {
+body:not(.front) .intro-attendees .intro-img .wrap .intro-img-content::before,
+body:not(.front) .intro-attendees .intro-img .wrap .intro-img-content::after {
     content: '';
     display: block;
     width: .5rem;
@@ -2466,29 +2471,21 @@ body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-conten
     z-index: 2
 }
 
-body:not(.front).article .intro-attendees .intro-img .wrap .intro-img-content::before,
-body:not(.front).article_list .intro-attendees .intro-img .wrap .intro-img-content::before,
-body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-content::before {
+body:not(.front) .intro-attendees .intro-img .wrap .intro-img-content::before {
     left: 0
 }
 
-body:not(.front).article .intro-attendees .intro-img .wrap .intro-img-content::after,
-body:not(.front).article_list .intro-attendees .intro-img .wrap .intro-img-content::after,
-body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-content::after {
+body:not(.front) .intro-attendees .intro-img .wrap .intro-img-content::after {
     right: 0
 }
 
-body:not(.front).article .intro-attendees .intro-img .wrap .intro-img-content img,
-body:not(.front).article_list .intro-attendees .intro-img .wrap .intro-img-content img,
-body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-content img {
+body:not(.front) .intro-attendees .intro-img .wrap .intro-img-content img {
     width: 75%;
     z-index: 1;
     position: relative
 }
 
-body:not(.front).article .intro-attendees .intro-img .wrap .intro-img-content .intro-bg,
-body:not(.front).article_list .intro-attendees .intro-img .wrap .intro-img-content .intro-bg,
-body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-content .intro-bg {
+body:not(.front) .intro-attendees .intro-img .wrap .intro-img-content .intro-bg {
     background-color: #C5143A;
     width: 85%;
     height: 80%;
@@ -2501,9 +2498,7 @@ body:not(.front).page-rubric .intro-attendees .intro-img .wrap .intro-img-conten
     z-index: 0
 }
 
-body:not(.front).article h3,
-body:not(.front).article_list h3,
-body:not(.front).page-rubric h3 {
+body:not(.front) h3 {
     font-size: 3.5rem;
     line-height: 4.2rem;
     text-transform: uppercase;
@@ -2514,24 +2509,18 @@ body:not(.front).page-rubric h3 {
     margin-top: 1.5rem
 }
 
-body:not(.front).article h3.text-center .title-deco,
-body:not(.front).article_list h3.text-center .title-deco,
-body:not(.front).page-rubric h3.text-center .title-deco {
+body:not(.front) h3.text-center .title-deco {
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%)
 }
 
-body:not(.front).article h3+h4,
-body:not(.front).article_list h3+h4,
-body:not(.front).page-rubric h3+h4 {
+body:not(.front) h3+h4 {
     margin-top: -3rem
 }
 
-body:not(.front).article h3 .title-deco,
-body:not(.front).article_list h3 .title-deco,
-body:not(.front).page-rubric h3 .title-deco {
+body:not(.front) h3 .title-deco {
     color: #f5f5f5;
     font-size: 9rem;
     line-height: 8.6rem;
@@ -2542,29 +2531,21 @@ body:not(.front).page-rubric h3 .title-deco {
     z-index: 1
 }
 
-body:not(.front).article h3 .title-txt,
-body:not(.front).article_list h3 .title-txt,
-body:not(.front).page-rubric h3 .title-txt {
+body:not(.front) h3 .title-txt {
     position: relative;
     z-index: 2
 }
 
-body:not(.front).article .text-right h3 .title-deco,
-body:not(.front).article_list .text-right h3 .title-deco,
-body:not(.front).page-rubric .text-right h3 .title-deco {
+body:not(.front) .text-right h3 .title-deco {
     left: auto;
     right: 0
 }
 
-body:not(.front).article .list-btn,
-body:not(.front).article_list .list-btn,
-body:not(.front).page-rubric .list-btn {
+body:not(.front) .list-btn {
     margin: 6.5rem auto
 }
 
-body:not(.front).article #zone1 .main-navigation,
-body:not(.front).article_list #zone1 .main-navigation,
-body:not(.front).page-rubric #zone1 .main-navigation {
+body:not(.front) #zone1 .main-navigation {
     position: absolute;
     width: 116rem;
     margin-left: 50%;
@@ -2575,15 +2556,11 @@ body:not(.front).page-rubric #zone1 .main-navigation {
     padding: 0
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line {
+body:not(.front) #zone1 .main-navigation .mn-menu-line {
     border: 0 none
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu {
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     -webkit-box-flex: 1;
@@ -2593,21 +2570,15 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu {
     content: counter(nbItem)
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu::before,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu::before,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu::before {
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu::before {
     display: none
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu::after,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu::after,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu::after {
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu::after {
     display: none
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item {
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
@@ -2615,9 +2586,7 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-
     flex-basis: 100%
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link {
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link {
     padding: 1.5rem 3rem;
     min-height: 8.4rem;
     display: -webkit-box;
@@ -2632,9 +2601,7 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-
     justify-content: center
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link::before,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link::before,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link::before {
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link::before {
     content: "";
     display: inline-block;
     width: 2rem;
@@ -2653,58 +2620,38 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus,
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover {
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus,
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover {
     background-color: white
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus::before,
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover::before,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus::before,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover::before,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus::before,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover::before {
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus::before,
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover::before {
     background-position: -100% 0;
     background-color: #C5143A
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus .mn-link-text,
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover .mn-link-text,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus .mn-link-text,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover .mn-link-text,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus .mn-link-text,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover .mn-link-text {
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:focus .mn-link-text,
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link:hover .mn-link-text {
     color: #252525
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active {
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active {
     background-color: #f5f5f5
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active::before,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active::before,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active::before {
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active::before {
     background-position: -100% 0;
     background-color: #C5143A
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active .mn-link-text,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active .mn-link-text,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active .mn-link-text {
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link.is-active .mn-link-text {
     font-family: "Roboto-bold", sans-serif;
     color: #252525;
     font-weight: normal
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text {
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text {
     text-transform: none;
     font-family: "Roboto-light", sans-serif;
     color: #575757;
@@ -2713,9 +2660,7 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-
     font-weight: bold
 }
 
-body:not(.front).article #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text::before,
-body:not(.front).article_list #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text::before,
-body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text::before {
+body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu .mn-menu-item .mn-link .mn-link-text::before {
     display: none
 }
 
@@ -2733,8 +2678,7 @@ body:not(.front).page-rubric #zone1 .main-navigation .mn-menu-line .mn-menu .mn-
 }
 
 .page-rubric.content379634 #zone2::before {
-    background-image: url("/theme/trustech_desktop_git/img/bg-highlights-trustech.jpg");
-    background-position: top -2rem center
+    background-image: url("/theme/trustech_desktop_git/img/bg-highlights-trustech.jpg")
 }
 
 .page-rubric.content379521 #zone2::before {

@@ -2078,6 +2078,10 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     color: #252525
 }
 
+.site-banner.is-stuck .nav-right .nav-social {
+    margin-top: 0
+}
+
 .site-banner.is-stuck .nav-right .nav-social li {
     margin-left: 1.5rem
 }
@@ -2222,7 +2226,8 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    line-height: 0
+    line-height: 0;
+    margin-top: 0
 }
 
 .site-banner .nav-right .nav-social li {

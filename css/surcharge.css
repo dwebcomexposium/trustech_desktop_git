@@ -528,6 +528,17 @@ h2 {
     margin-left: 0.3rem
 }
 
+.list-articles .grid-la-list .gla-item .la-item-content .la-item-btn,
+.list-articles .grid-la-list .gla-item .gla-item-content .la-item-btn,
+.list-articles .grid-la-list .la-item .la-item-content .la-item-btn,
+.list-articles .grid-la-list .la-item .gla-item-content .la-item-btn,
+.list-articles .la-list .gla-item .la-item-content .la-item-btn,
+.list-articles .la-list .gla-item .gla-item-content .la-item-btn,
+.list-articles .la-list .la-item .la-item-content .la-item-btn,
+.list-articles .la-list .la-item .gla-item-content .la-item-btn {
+    margin-bottom: 3.4rem
+}
+
 .list-articles .grid-la-list .gla-item .la-item-content .la-item-title,
 .list-articles .grid-la-list .gla-item .la-item-content .gla-item-title,
 .list-articles .grid-la-list .gla-item .gla-item-content .la-item-title,
@@ -990,10 +1001,6 @@ h2 {
 
 .icon-user-circle-o::before {
     display: none
-}
-
-.edito {
-    text-align: center
 }
 
 .edito h2+p {

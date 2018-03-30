@@ -7335,6 +7335,29 @@ body.article .cl-item-phone span:nth-child(2) {
     margin-top: 0
 }
 
+.mod-catal.catal-nav-ex .catal-nav-ex-link .icon-catal {
+    color: #252525;
+    margin: 0 6px
+}
+
+.mod-catal.catal-nav-ex .catal-nav-ex-link:focus,
+.mod-catal.catal-nav-ex .catal-nav-ex-link:hover {
+    color: #252525;
+    background-color: transparent
+}
+
+.mod-catal.catal-nav-ex .catal-nav-ex-sep {
+    border-left: 1px solid #dedede
+}
+
+.mod-catal.catal-nav-ex .catal-nav-ex-more-link {
+    color: #252525
+}
+
+.mod-catal.catal-nav-ex .catal-nav-ex-more-link .icon-catal {
+    color: #C5143A
+}
+
 .mod-catal.catal-nav-ex {
     border-bottom: 1px solid #e3e9ea;
     margin: 0;
@@ -7344,7 +7367,7 @@ body.article .cl-item-phone span:nth-child(2) {
     width: 100%;
     z-index: 1;
     color: white;
-    top: 47.5rem;
+    top: 48rem;
     border-bottom: 0 none;
     max-width: 116rem;
     left: 50%;

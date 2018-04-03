@@ -10,6 +10,8 @@
         },
 
 
+
+
         popin : function(){
             $(".video-item").click(function(){
                 var videoName = $(this).data('videoname');
@@ -17,11 +19,15 @@
                 $("body").addClass('noscroll');
             });
             $(".popin-close, .popin-overlay").click(function(){
+                var videoName = $(this).data('videoname');
                 $(".popin").removeClass('popin-open');
-                $('.popin-video iframe').attr("src", $(".popin-video iframe").attr("src"));
+                $("#"+ videoName +' iframe').attr("src", $("#"+ videoName +' iframe').attr("src"));
                 $("body").removeClass('noscroll');
             });
         },
+
+
+
 
         blocsWhyattend : function(){
 
@@ -31,6 +37,9 @@
             });
 
         },
+
+
+
 
         tabSLider : function(){
 

@@ -7721,7 +7721,8 @@ body.article .cl-item-phone span:nth-child(2) {
 
 .content372362 h1+.quicklinks .btn-primary {
     background-color: #252525;
-    border-color: #252525
+    border-color: #252525;
+    box-shadow: 0 15px 35px -20px rgba(0, 0, 0, 0.25)
 }
 
 .content372362 .edito {
@@ -7755,7 +7756,7 @@ body.article .cl-item-phone span:nth-child(2) {
     flex-basis: 30%;
     display: block;
     background-color: white;
-    opacity: .6;
+    opacity: .7;
     border-radius: .5rem .5rem 0 0;
     -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -7763,7 +7764,7 @@ body.article .cl-item-phone span:nth-child(2) {
 }
 
 .price-list .price-cards .price-card:hover {
-    opacity: .8;
+    opacity: .7;
     cursor: initial
 }
 

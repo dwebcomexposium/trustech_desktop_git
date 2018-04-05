@@ -6330,7 +6330,8 @@ body.article .cl-item-phone span:nth-child(2) {
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+    background-size: 100%
 }
 
 .content372372 div.edito:nth-child(4) .inside .block-title::before {
@@ -6366,7 +6367,8 @@ body.article .cl-item-phone span:nth-child(2) {
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+    background-size: 100%
 }
 
 .content372372 div.edito:nth-child(5) .inside .block-title::before {
@@ -6422,7 +6424,8 @@ body.article .cl-item-phone span:nth-child(2) {
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+    background-size: 100%
 }
 
 .content372372 div.edito:nth-child(6) .inside .block-title::before {

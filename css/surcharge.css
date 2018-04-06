@@ -25,11 +25,18 @@ html {
     }
 }
 
+@media screen and (max-width: 1199px) {
+    html {
+        font-size: 50%
+    }
+}
+
 p,
 h3,
 h2 {
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-weight: normal
 }
 
 body {
@@ -54,7 +61,8 @@ a {
 b,
 strong {
     color: #252525;
-    font-family: "Roboto-bold", sans-serif
+    font-family: "Roboto-bold", sans-serif;
+    font-weight: normal
 }
 
 small {
@@ -89,7 +97,8 @@ body.article section h1 {
     font-size: 5.8rem;
     line-height: 6.7rem;
     font-family: "Roboto-slab-bold", sans-serif;
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-weight: normal
 }
 
 @media screen and (max-width: 1600px) {
@@ -111,7 +120,8 @@ body.article section h2 {
     line-height: 5.6rem;
     text-transform: uppercase;
     font-family: "Roboto-slab-bold", sans-serif;
-    margin-bottom: 0
+    margin-bottom: 0;
+    font-weight: normal
 }
 
 h4,
@@ -303,7 +313,8 @@ body.article section h4 {
 
 h1,
 h2 {
-    border: 0 none
+    border: 0 none;
+    font-weight: normal
 }
 
 .site-wrapper .block:not(:first-child) {
@@ -1366,6 +1377,7 @@ address {
     height: 1rem;
     background-image: url("/theme/trustech_desktop_git/img/btn-arrow.svg");
     background-repeat: no-repeat;
+    background-size: 100%;
     position: absolute;
     top: 50%;
     -webkit-transform: translateX(50%) translateY(-50%);
@@ -1784,7 +1796,8 @@ body:not(.front).page-rubric .edito.sponsor h3 {
     font-family: "Roboto-slab-bold", sans-serif;
     margin-bottom: 3.2rem;
     text-transform: capitalize;
-    margin-top: 0
+    margin-top: 0;
+    font-weight: normal
 }
 
 body.front .edito.delegate,
@@ -1886,6 +1899,7 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     text-transform: none;
     font-size: 3rem;
     color: white;
+    font-weight: normal;
     margin: 0
 }
 
@@ -2116,10 +2130,22 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     height: 5rem
 }
 
+@media screen and (max-width: 1199px) {
+    .chart-bloc .chart-circles .chart-circle-card .chart-icon {
+        top: 6.5rem
+    }
+}
+
 .chart-bloc .chart-circles .chart-circle-card .chart-icon.trustech-icon-payment {
     width: 5.6rem;
     height: auto;
     top: 5.5rem
+}
+
+@media screen and (max-width: 1199px) {
+    .chart-bloc .chart-circles .chart-circle-card .chart-icon.trustech-icon-payment {
+        top: 7.3rem
+    }
 }
 
 .chart-bloc .chart-circles .chart-circle-card .chart-circle-number {
@@ -2132,6 +2158,12 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%)
+}
+
+@media screen and (max-width: 1199px) {
+    .chart-bloc .chart-circles .chart-circle-card .chart-circle-number {
+        top: 5.8rem
+    }
 }
 
 .chart-bloc .chart-circles .chart-circle-card .chart-circle-bloc {
@@ -2304,7 +2336,8 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     color: white;
     -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1)
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: normal
 }
 
 .site-banner .mn-menu {
@@ -2746,6 +2779,10 @@ body:not(.front) h3 .title-deco {
 body:not(.front) h3 .title-txt {
     position: relative;
     z-index: 2
+}
+
+body:not(.front) .text-right h3 {
+    font-weight: normal
 }
 
 body:not(.front) .text-right h3 .title-deco {
@@ -3321,6 +3358,7 @@ body:not(.front).page-rubric .partner {
     background-image: url(/theme/trustech_desktop_git/img/btn-arrow.svg);
     background-repeat: no-repeat;
     position: absolute;
+    background-size: 100%;
     top: 50%;
     -webkit-transform: translateX(50%) translateY(-50%);
     -ms-transform: translateX(50%) translateY(-50%);
@@ -3554,6 +3592,7 @@ body:not(.front).page-rubric .partner {
     height: 1rem;
     background-image: url("/theme/trustech_desktop_git/img/btn-arrow.svg");
     background-repeat: no-repeat;
+    background-size: 100%;
     position: absolute;
     top: 50%;
     -webkit-transform: translateX(50%) translateY(-50%);
@@ -4201,6 +4240,7 @@ html[lang="fr"] body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu 
 
 .front .site-wrapper .contacts-list .cl-item .cl-item-content .cl-item-title {
     font-family: "Roboto-slab-bold", sans-serif;
+    font-weight: normal;
     color: #252525;
     font-size: 3.2rem;
     background-color: white;
@@ -4243,9 +4283,17 @@ html[lang="fr"] body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu 
     z-index: 0;
     background-color: black;
     font-size: 0;
-    margin-bottom: 8rem
+    margin-bottom: 8rem;
+    overflow: hidden
 }
 
+@media screen and (max-width: 1199px) {
+    .video-container {
+        max-height: 68rem
+    }
+}
+
+.video-container .canvas-video,
 .video-container .video-bg {
     position: relative;
     min-width: 100%;
@@ -4580,6 +4628,12 @@ section.keyfigures {
     }
 }
 
+@media screen and (max-width: 1199px) {
+    section.keyfigures {
+        background-size: auto 61vh
+    }
+}
+
 section.keyfigures .figures {
     max-width: 87rem;
     -webkit-transform: translateY(-5rem);
@@ -4615,6 +4669,12 @@ section.keyfigures .figures::before {
 @media screen and (min-width: 2200px) {
     section.keyfigures .figures::before {
         background-size: auto 62vh
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    section.keyfigures .figures::before {
+        background-size: auto 61vh
     }
 }
 
@@ -6248,6 +6308,7 @@ body.article .cl-item-phone span:nth-child(2) {
     width: .6rem;
     height: 1rem;
     background-image: url(/theme/trustech_desktop_git/img/btn-arrow.svg);
+    background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
     top: 50%;

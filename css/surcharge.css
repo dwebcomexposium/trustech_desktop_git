@@ -1380,6 +1380,7 @@ address {
 .main-title-with-link [class^="link-"],
 .edito-item-btn a,
 .article .focus1 a,
+.lien1,
 .btn-primary {
     background-color: #C5143A;
     -webkit-box-shadow: 0 15px 35px -20px rgba(0, 0, 0, 0.25), 0 15px 35px -20px rgba(197, 20, 58, 0.5);
@@ -1392,6 +1393,7 @@ address {
 .main-title-with-link [class^="link-"]::after,
 .edito-item-btn a::after,
 .article .focus1 a::after,
+.lien1::after,
 .btn-primary::after {
     content: '';
     display: inline-block;
@@ -1415,6 +1417,7 @@ address {
 .main-title-with-link [class^="link-"]:hover,
 .edito-item-btn a:hover,
 .article .focus1 a:hover,
+.lien1:hover,
 .btn-primary:hover {
     color: transparent
 }
@@ -1423,6 +1426,7 @@ address {
 .main-title-with-link [class^="link-"]:hover::after,
 .edito-item-btn a:hover::after,
 .article .focus1 a:hover::after,
+.lien1:hover::after,
 .btn-primary:hover::after {
     right: 50%
 }
@@ -1431,6 +1435,7 @@ address {
 .main-title-with-link [class^="link-"] .icon,
 .edito-item-btn a .icon,
 .article .focus1 a .icon,
+.lien1 .icon,
 .btn-primary .icon {
     display: none
 }

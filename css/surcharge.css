@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document - Surcharge css Agence */
+
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box
@@ -6411,7 +6412,7 @@ body.article .cl-item-phone span:nth-child(2) {
 
 .content372372 h3 {
     clear: both;
-    margin-bottom: 3rem !important
+    margin-bottom: 7rem !important
 }
 
 .content372372 div.edito:nth-child(4),
@@ -7459,9 +7460,11 @@ body.article .cl-item-phone span:nth-child(2) {
 .mod-catal .catal-ex-item-cat-title,
 .mod-catal .catal-ex-item-cat-more-link {
     text-align: left;
-    color: #2a2a2a;
+    color: #252525;
     line-height: 18px;
-    margin-bottom: 5px
+    font-weight: normal;
+    margin-bottom: 5px;
+    font-family: "Roboto-light", sans-serif
 }
 
 .mod-catal button.catal-ex-item-cat-more-link {
@@ -7510,14 +7513,18 @@ body.article .cl-item-phone span:nth-child(2) {
     box-shadow: 0 6px 15px -9px rgba(0, 0, 0, 0.3);
     text-decoration: none;
     font-weight: normal;
-    padding: 8px 0;
-    font-size: 16px;
-    color: #C5143A
+    background-color: #C5143A;
+    color: white;
+    padding: 1rem 1.5rem;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    transition: all 0.25s ease
 }
 
 .mod-catal .catal-ed-main-cat-item a:hover,
 .mod-catal .catal-ex-item-cat-item a:hover {
-    color: #C5143A
+    color: #C5143A;
+    background-color: #f5f5f5
 }
 
 .mod-catal .catal-ed-main .catal-ed-main-cat-item {
@@ -7557,7 +7564,8 @@ body.article .cl-item-phone span:nth-child(2) {
     margin-bottom: -8px;
     width: 45px;
     margin-right: 9px;
-    background-color: #C5143A
+    background-color: #C5143A;
+    display: none
 }
 
 .catalogue.fiche .mod-catal .catal-ex-item-cat-icon {

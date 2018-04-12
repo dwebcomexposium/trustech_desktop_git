@@ -1348,6 +1348,7 @@ address {
 .main-title-with-link [class^="btn-"],
 .main-title-with-link [class^="link-"],
 .btn-primary,
+.lien1,
 .edito-item-btn a,
 .article .focus1 a,
 .btn {
@@ -1364,12 +1365,21 @@ address {
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+[class^="btn"]:focus,
 [class^="btn"]:hover,
+.main-title-with-link [class^="btn-"]:focus,
 .main-title-with-link [class^="btn-"]:hover,
+.main-title-with-link [class^="link-"]:focus,
 .main-title-with-link [class^="link-"]:hover,
+.btn-primary:focus,
 .btn-primary:hover,
+.lien1:focus,
+.lien1:hover,
+.edito-item-btn a:focus,
 .edito-item-btn a:hover,
+.article .focus1 a:focus,
 .article .focus1 a:hover,
+.btn:focus,
 .btn:hover {
     background-color: #C5143A;
     border-color: #C5143A;
@@ -1413,20 +1423,32 @@ address {
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+.main-title-with-link [class^="btn-"]:focus,
 .main-title-with-link [class^="btn-"]:hover,
+.main-title-with-link [class^="link-"]:focus,
 .main-title-with-link [class^="link-"]:hover,
+.edito-item-btn a:focus,
 .edito-item-btn a:hover,
+.article .focus1 a:focus,
 .article .focus1 a:hover,
+.lien1:focus,
 .lien1:hover,
+.btn-primary:focus,
 .btn-primary:hover {
     color: transparent
 }
 
+.main-title-with-link [class^="btn-"]:focus::after,
 .main-title-with-link [class^="btn-"]:hover::after,
+.main-title-with-link [class^="link-"]:focus::after,
 .main-title-with-link [class^="link-"]:hover::after,
+.edito-item-btn a:focus::after,
 .edito-item-btn a:hover::after,
+.article .focus1 a:focus::after,
 .article .focus1 a:hover::after,
+.lien1:focus::after,
 .lien1:hover::after,
+.btn-primary:focus::after,
 .btn-primary:hover::after {
     right: 50%
 }
@@ -1444,6 +1466,7 @@ address {
     border-color: white
 }
 
+.btn-white:focus,
 .btn-white:hover {
     background-color: white;
     color: #252525;
@@ -1455,6 +1478,7 @@ address {
     color: #252525
 }
 
+.btn-black:focus,
 .btn-black:hover {
     background-color: #252525;
     border-color: #252525;
@@ -1557,6 +1581,7 @@ address {
     padding: 1rem 0
 }
 
+.popin .popin-container .popin-close:focus,
 .popin .popin-container .popin-close:hover {
     color: #C5143A
 }
@@ -1598,6 +1623,7 @@ address {
     margin-right: 0
 }
 
+.tabSlider .tabSlider-nav .tabSlider-nav-item:focus,
 .tabSlider .tabSlider-nav .tabSlider-nav-item:hover {
     border-color: #575757;
     cursor: pointer;
@@ -1964,6 +1990,7 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     background-image: url("/theme/trustech_desktop_git/img/btn-arrow-red.svg")
 }
 
+.cta-band .wrap .btn-primary:focus,
 .cta-band .wrap .btn-primary:hover {
     color: transparent
 }
@@ -2033,6 +2060,7 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     display: none
 }
 
+.newsletter-form .nf-main-content [class^="btn"]:focus,
 .newsletter-form .nf-main-content [class^="btn"]:hover {
     background-color: #C5143A
 }
@@ -2303,6 +2331,7 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     }
 }
 
+.site-banner.is-stuck .mn-item-lvl-1.mn-menu-item-378394>.mn-link:focus,
 .site-banner.is-stuck .mn-item-lvl-1.mn-menu-item-378394>.mn-link:hover {
     background-color: #f5f5f5
 }
@@ -2423,6 +2452,7 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+.site-banner .mn-item-lvl-1>.mn-link:focus .mn-link-text::after,
 .site-banner .mn-item-lvl-1>.mn-link:hover .mn-link-text::after {
     content: "";
     width: 100%;
@@ -2451,6 +2481,7 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     display: none
 }
 
+.site-banner .mn-item-lvl-1.mn-menu-item-378394>.mn-link:focus,
 .site-banner .mn-item-lvl-1.mn-menu-item-378394>.mn-link:hover {
     background-color: white;
     color: #C5143A
@@ -2470,6 +2501,7 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     line-height: 1.8rem
 }
 
+.site-banner .nav-right .exhibitor:focus,
 .site-banner .nav-right .exhibitor:hover {
     text-decoration: underline
 }
@@ -2492,6 +2524,7 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     color: white
 }
 
+.site-banner .nav-right .nav-social li a:focus svg path,
 .site-banner .nav-right .nav-social li a:hover svg path {
     fill: #C5143A
 }
@@ -2608,6 +2641,7 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     display: none
 }
 
+.site-footer>.inside .quicklinks .btn-primary:focus,
 .site-footer>.inside .quicklinks .btn-primary:hover {
     color: #C5143A
 }
@@ -2670,6 +2704,7 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+.site-footer>.inside .footer-social .nav-social li a:focus svg path,
 .site-footer>.inside .footer-social .nav-social li a:hover svg path {
     fill: #C5143A
 }
@@ -2689,6 +2724,7 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
     color: #a0a0a0
 }
 
+.site-footer>.inside .copyright a:focus svg g,
 .site-footer>.inside .copyright a:hover svg g {
     fill: #252525
 }
@@ -3527,10 +3563,12 @@ body:not(.front).page-rubric .partner {
     display: none
 }
 
+.page-rubric #zone2 .article_large .la-list .la-item .la-item-content .la-item-btn .link-read-more:focus,
 .page-rubric #zone2 .article_large .la-list .la-item .la-item-content .la-item-btn .link-read-more:hover {
     color: transparent
 }
 
+.page-rubric #zone2 .article_large .la-list .la-item .la-item-content .la-item-btn .link-read-more:focus::after,
 .page-rubric #zone2 .article_large .la-list .la-item .la-item-content .la-item-btn .link-read-more:hover::after {
     right: 50%
 }
@@ -3676,6 +3714,7 @@ body:not(.front).page-rubric .partner {
     color: #C5143A
 }
 
+.article-wrapper .article-content a:focus,
 .article-wrapper .article-content a:hover {
     color: #C5143A;
     text-decoration: underline
@@ -3717,14 +3756,17 @@ body:not(.front).page-rubric .partner {
     align-items: center
 }
 
+.article-wrapper .article-navigation .an-item .an-item-link:focus .an-item-illust,
 .article-wrapper .article-navigation .an-item .an-item-link:hover .an-item-illust {
     opacity: 0.6
 }
 
+.article-wrapper .article-navigation .an-item .an-item-link:focus .icon.icon-short-arrow-right,
 .article-wrapper .article-navigation .an-item .an-item-link:hover .icon.icon-short-arrow-right {
     right: 2.2rem
 }
 
+.article-wrapper .article-navigation .an-item .an-item-link:focus .icon.icon-short-arrow-left,
 .article-wrapper .article-navigation .an-item .an-item-link:hover .icon.icon-short-arrow-left {
     left: 2.2rem
 }
@@ -3873,17 +3915,20 @@ body.article.content379537 .article-wrapper .article-content {
     padding-bottom: 4.5rem
 }
 
+.blocs-infos ul .bloc-item a:focus .btn,
 .blocs-infos ul .bloc-item a:hover .btn {
     background-color: white;
     border-color: white;
     color: #C5143A
 }
 
+.blocs-infos ul .bloc-item a:focus .btn::before,
 .blocs-infos ul .bloc-item a:hover .btn::before {
     margin-right: 0.3rem;
     margin-left: 0.2rem
 }
 
+.blocs-infos ul .bloc-item a:focus h3,
 .blocs-infos ul .bloc-item a:hover h3 {
     color: #C5143A
 }
@@ -5118,6 +5163,7 @@ body.article .focus1 a {
     color: white
 }
 
+body.article .focus1 a:focus,
 body.article .focus1 a:hover {
     text-decoration: none
 }
@@ -5142,7 +5188,9 @@ body.article .focus2 a.externe {
     text-decoration: none
 }
 
+body.article .focus2 a.lien2:focus,
 body.article .focus2 a.lien2:hover,
+body.article .focus2 a.externe:focus,
 body.article .focus2 a.externe:hover {
     background-color: #252525;
     border-color: #252525;
@@ -5168,6 +5216,7 @@ body.article p.style4 a.lien4 {
     text-decoration: none
 }
 
+body.article p.style4 a.lien4:focus,
 body.article p.style4 a.lien4:hover {
     background-color: #E4E4E4;
     color: #252525
@@ -5195,6 +5244,7 @@ body.article p.style3 a.lien4.zip {
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+body.article p.style3 a.lien4.zip:focus,
 body.article p.style3 a.lien4.zip:hover {
     background: #E4E4E4
 }
@@ -5579,6 +5629,7 @@ body.article .focus1 a {
     color: white
 }
 
+body.article .focus1 a:focus,
 body.article .focus1 a:hover {
     text-decoration: none
 }
@@ -5603,7 +5654,9 @@ body.article .focus2 a.externe {
     text-decoration: none
 }
 
+body.article .focus2 a.lien2:focus,
 body.article .focus2 a.lien2:hover,
+body.article .focus2 a.externe:focus,
 body.article .focus2 a.externe:hover {
     background-color: #252525;
     border-color: #252525;
@@ -5629,6 +5682,7 @@ body.article p.style4 a.lien4 {
     text-decoration: none
 }
 
+body.article p.style4 a.lien4:focus,
 body.article p.style4 a.lien4:hover {
     background-color: #E4E4E4;
     color: #252525
@@ -5656,6 +5710,7 @@ body.article p.style3 a.lien4.zip {
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+body.article p.style3 a.lien4.zip:focus,
 body.article p.style3 a.lien4.zip:hover {
     background: #E4E4E4
 }
@@ -6240,6 +6295,7 @@ body.article .cl-item-phone span:nth-child(2) {
     overflow: hidden
 }
 
+.video-list .video-item:focus img,
 .video-list .video-item:hover img {
     opacity: .99;
     -webkit-transform: scale(1.03);
@@ -6247,6 +6303,7 @@ body.article .cl-item-phone span:nth-child(2) {
     transform: scale(1.03)
 }
 
+.video-list .video-item:focus .play-icon,
 .video-list .video-item:hover .play-icon {
     -webkit-box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0);
     box-shadow: 0 0 0 1.5rem rgba(255, 255, 255, 0)
@@ -6441,10 +6498,12 @@ body.article .cl-item-phone span:nth-child(2) {
     margin-bottom: 1.5rem
 }
 
+.content372372 div.edito:nth-child(7) .inside a:focus,
 .content372372 div.edito:nth-child(7) .inside a:hover {
     color: transparent
 }
 
+.content372372 div.edito:nth-child(7) .inside a:focus::after,
 .content372372 div.edito:nth-child(7) .inside a:hover::after {
     right: 50%
 }
@@ -7975,15 +8034,18 @@ body.article .cl-item-phone span:nth-child(2) {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+.price-list .price-cards .price-card:focus,
 .price-list .price-cards .price-card:hover {
     opacity: .7;
     cursor: initial
 }
 
+.price-list .price-cards .price-card:focus .btn-primary,
 .price-list .price-cards .price-card:hover .btn-primary {
     color: white
 }
 
+.price-list .price-cards .price-card:focus .btn-primary::after,
 .price-list .price-cards .price-card:hover .btn-primary::after {
     right: 2.7rem
 }
@@ -7994,6 +8056,7 @@ body.article .cl-item-phone span:nth-child(2) {
     opacity: 1
 }
 
+.price-list .price-cards .price-card.active:focus,
 .price-list .price-cards .price-card.active:hover {
     cursor: pointer;
     -webkit-transform: translateY(-1rem);
@@ -8003,10 +8066,12 @@ body.article .cl-item-phone span:nth-child(2) {
     box-shadow: 0 3.7rem 3rem -2.5rem rgba(0, 0, 0, 0.15)
 }
 
+.price-list .price-cards .price-card.active:focus .btn-primary,
 .price-list .price-cards .price-card.active:hover .btn-primary {
     color: transparent
 }
 
+.price-list .price-cards .price-card.active:focus .btn-primary::after,
 .price-list .price-cards .price-card.active:hover .btn-primary::after {
     right: 50%
 }

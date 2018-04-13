@@ -1,6 +1,5 @@
 @charset "utf-8";
 /* CSS Document - Surcharge css Agence */
-
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box
@@ -8034,6 +8033,20 @@ body.article .cl-item-phone span:nth-child(2) {
     justify-content: space-between
 }
 
+.price-list .price-cards .price-last {
+    width: 32rem;
+    text-align: center;
+    margin: 7rem auto 0;
+    border: 1px dotted #ccc;
+    padding: 3rem 2rem;
+    max-width: 100%;
+    font-size: 1.6rem
+}
+
+.price-list .price-cards .price-last strong {
+    font-size: 2.3rem
+}
+
 .price-list .price-cards .price-card {
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
@@ -8043,7 +8056,8 @@ body.article .cl-item-phone span:nth-child(2) {
     border-radius: .5rem .5rem 0 0;
     -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none
 }
 
 .price-list .price-cards .price-card:focus,
@@ -8065,7 +8079,8 @@ body.article .cl-item-phone span:nth-child(2) {
 .price-list .price-cards .price-card.active {
     -webkit-box-shadow: 0 2.7rem 3rem -2.5rem rgba(0, 0, 0, 0.15);
     box-shadow: 0 2.7rem 3rem -2.5rem rgba(0, 0, 0, 0.15);
-    opacity: 1
+    opacity: 1;
+    pointer-events: all
 }
 
 .price-list .price-cards .price-card.active:focus,

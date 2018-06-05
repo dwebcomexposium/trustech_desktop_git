@@ -2889,7 +2889,8 @@ body:not(.front) #zone1 .main-navigation {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    padding: 0
+    padding: 0;
+    z-index: 4;
 }
 
 body:not(.front) #zone1 .main-navigation .mn-menu-line {

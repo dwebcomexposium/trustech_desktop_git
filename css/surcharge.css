@@ -8400,3 +8400,7 @@ body.article .cl-item-phone span:nth-child(2) {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.content372407 .article-wrapper .article-content {
+    max-width: 93rem;
+}

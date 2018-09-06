@@ -8404,3 +8404,7 @@ body.article .cl-item-phone span:nth-child(2) {
 .content372407 .article-wrapper .article-content {
     max-width: 93rem;
 }
+body.node684861 .article-wrapper .article-content {
+   margin: 3rem auto 0 auto !important;
+}
+

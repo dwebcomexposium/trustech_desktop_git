@@ -2584,6 +2584,7 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
 
 .site-banner .nav-right .nav-social li a svg {
     height: 1.5rem;
+    width: 1.5rem;
 }
 
 .site-banner .nav-right .nav-social li a svg path {
@@ -2750,6 +2751,7 @@ body:not(.front).page-rubric .edito.sponsor .edito-item-btn a {
 
 .site-footer>.inside .footer-social .nav-social li a svg {
     height: 2.5rem;
+    width: 2.5rem;
 }
 
 .site-footer>.inside .footer-social .nav-social li a svg path {
@@ -3749,6 +3751,10 @@ body:not(.front).page-rubric .partner {
     height: 42.5rem;
     position: absolute;
     bottom: -49rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .article-wrapper .article-title .inside .at-content {
@@ -3997,6 +4003,7 @@ body.article.content379537 .article-wrapper .article-content {
 }
 
 .blocs-infos ul .bloc-item a h3 {
+    width:100;
     text-transform: none;
     text-align: left;
     margin-bottom: 3.5rem;
@@ -4008,6 +4015,7 @@ body.article.content379537 .article-wrapper .article-content {
 .blocs-infos ul .bloc-item a .bloc-content {
     text-align: left;
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 .blocs-infos ul .bloc-item a .bloc-content p {
@@ -4317,6 +4325,7 @@ html[lang="fr"] body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu 
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
     opacity: 0.85;
+    width: 100%;
     -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -5560,6 +5569,9 @@ body.article .cl-item-phone span:nth-child(2) {
 
 .conference-track .conf-track-list .conf-track-icon img {
     max-width: 6.5rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 
 .conference-track .conf-track-list .conf-track-txt {
@@ -8409,4 +8421,13 @@ body.article .cl-item-phone span:nth-child(2) {
 body.node684861 .article-wrapper .article-content {
    margin: 3rem auto 0 auto !important;
 }
-
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+  /* IE10+ hack */
+    .top-objectives .objectives-circle {
+        width: 80rem;
+    }
+    .top-functions > img,
+    .countries > img {
+        width: 100%;
+    }
+}

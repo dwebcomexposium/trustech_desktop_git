@@ -1328,7 +1328,9 @@ abbr[title] {
 address {
     font-style: normal;
 }
-
+.article-wrapper .article-content iframe{
+    width: 100%;
+}
 .content372408 .article-wrapper .article-content {
     max-width: 100rem;
 }

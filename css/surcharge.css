@@ -3776,7 +3776,11 @@ body:not(.front).page-rubric .partner {
 
 .article-wrapper .article-content {
     max-width: 76rem;
-    margin: 51rem auto 0 auto;
+    margin: 6rem auto 0 auto;
+}
+
+.article-wrapper .article-content.push-content {
+    margin-top: 51rem;
 }
 
 .article-wrapper .article-content a {

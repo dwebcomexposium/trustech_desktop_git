@@ -4,6 +4,7 @@
 
         init : function(){
 
+            this.articleIllustration();
             this.blocsWhyattend();
             this.popin();
             this.iosVideoPlayer();
@@ -11,6 +12,14 @@
         },
 
 
+        articleIllustration : function () {
+            if ( $( ".article-wrapper .at-illust" ).length ) {
+ 
+                $( ".article-wrapper .article-content" ).addClass("push-content");
+
+            }
+        },
+        
         iosVideoPlayer : function () {
             var cvpHandlers = {
                 canvasClickHandler: null,

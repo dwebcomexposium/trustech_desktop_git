@@ -4007,7 +4007,7 @@ body.article.content379537 .article-wrapper .article-content {
 }
 
 .blocs-infos ul .bloc-item a h3 {
-    width:100;
+    width:100%;
     text-transform: none;
     text-align: left;
     margin-bottom: 3.5rem;
@@ -6008,6 +6008,9 @@ body.article .cl-item-phone span:nth-child(2) {
 
 .solutions-services .circle-grey img {
     width: 5.4rem;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
 }
 
 .solutions-services .circle-grey img.trustech-icon-transportation {
@@ -8425,8 +8428,8 @@ body.article .cl-item-phone span:nth-child(2) {
 body.node684861 .article-wrapper .article-content {
    margin: 3rem auto 0 auto !important;
 }
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
-  /* IE10+ hack */
+/* IE10+ hack */
+@media screen and (min-width:0\0){  
     .top-objectives .objectives-circle {
         width: 80rem;
     }

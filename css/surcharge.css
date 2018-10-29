@@ -7581,8 +7581,8 @@ body.article .cl-item-phone span:nth-child(2) {
 }
 
 .mod-catal .catal-ex-item-img {
-    width: 296px;
-    background-color: #f5f5f5;
+    /*width: 296px;
+    background-color: #f5f5f5;*/
 }
 
 .mod-catal .catal-ex-item-title {
@@ -7917,7 +7917,7 @@ body.article .cl-item-phone span:nth-child(2) {
 }
 
 .mod-catal .catal-ex-item.is-premium .catal-ex-item-img {
-    background-color: white;
+    /*background-color: white;*/
 }
 
 .mod-catal .catal-ex-item.is-premium .catal-ex-item-title a {
@@ -8061,9 +8061,14 @@ body.article .cl-item-phone span:nth-child(2) {
 
 .mod-catal .catal-ed-main,
 .catal-other-ex,
+.catal-ed-brands,
 .mod-catal .catal-ed-activity {
     margin: 0 auto;
     max-width: 116rem;
+}
+
+.mod-catal .catal-ed-main-title .qty-round-big {
+    display:none;
 }
 
 .catal-other-ex {
@@ -8424,6 +8429,19 @@ body.article .cl-item-phone span:nth-child(2) {
 
 .content372407 .article-wrapper .article-content {
     max-width: 93rem;
+}
+
+.mod-catal .catal-ed-brands .catal-ed-brands-item {
+    border: 0 none;
+}
+.mod-catal.catal-other-ex .catal-other-ex-img,
+.mod-catal.catal-other-prd .catal-other-ex-img,
+.mod-catal.catal-other-ex .catal-other-prd-img,
+.mod-catal.catal-other-prd .catal-other-prd-img {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-bottom: 8px;
 }
 body.node684861 .article-wrapper .article-content {
    margin: 3rem auto 0 auto !important;

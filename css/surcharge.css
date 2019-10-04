@@ -8736,6 +8736,14 @@ body.article .cl-item-phone span:nth-child(2) {
     border-bottom: 0
 }
 
+.product-details .catal-prd-exhibitor-view {
+    margin-bottom: 0 !important
+}
+
+.product-details .mod-catal i.icon-catal:before {
+    color: #C5143A !important
+}
+
 .product-details .mod-catal .catal-prd-exhibitor .catal-prd-exhibitor-content {
     width: 75% !important
 }
@@ -8814,6 +8822,11 @@ body.article .cl-item-phone span:nth-child(2) {
     border-color: white;
     font-family: "Roboto-bold", sans-serif;
     padding: 15px 40px 15px 22px
+}
+
+.product-details .catal-pr-item-buttons .btn-primary:hover {
+    background-color: #C5143A !important;
+    border: 1px solid #C5143A
 }
 
 .product-details .catal-pr-item-buttons .btn-primary::after {

@@ -8732,7 +8732,7 @@ body.article .cl-item-phone span:nth-child(2) {
     display: none !important
 }
 
-.product-details .mod-catal .catal-prd-group {
+.product-details .catal-nav-ex mod-catal .mod-catal .catal-prd-group {
     border-bottom: 0
 }
 
@@ -8856,6 +8856,10 @@ body.article .cl-item-phone span:nth-child(2) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
+}
+
+.product-details .btn-primary:hover i::before {
+    color: #fff !important
 }
 
 .product-details .mod-catal.catal-nav-ex {

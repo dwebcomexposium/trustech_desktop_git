@@ -8562,3 +8562,132 @@ body.article .cl-item-phone span:nth-child(2) {
     background-position: center;
     background-repeat: no-repeat
 }
+
+.mod-catal .catal-ed-products .catal-edp-title,
+.mod-catal .catal-ed-products .catal-edp-item {
+    border-bottom: 0
+}
+
+.mod-catal h2 {
+    color: #C5143A !important
+}
+
+.mod-catal .catal-ed-main .catal-ed-main-cat-item:hover {
+    -webkit-transform: translateX(-4px) !important;
+        -ms-transform: translateX(-4px) !important;
+            transform: translateX(-4px) !important
+}
+
+.mod-catal .catal-ed-main .catal-ed-main-cat-item:hover a {
+    color: #C5143A !important
+}
+
+.mod-catal .catal-ed-main-cat-item {
+    min-width: 90%
+}
+
+.mod-catal .catal-ed-main-cat-link {
+    padding: 1.5rem !important;
+    color: white !important
+}
+
+.mod-catal .catal-ed-main-cat-link:hover {
+    color: #C5143A
+}
+
+.mod-catal .catal-ed-title {
+    margin-top: 0 !important
+}
+
+.mod-catal .catal-ed-main-cat-title {
+    margin-bottom: 0.8rem !important
+}
+
+.mod-catal .catal-ed-group {
+    margin: 0 auto !important;
+    max-width: 116rem !important
+}
+
+.mod-catal .catal-ed-main-desc-content {
+    padding-left: 2rem;
+    padding-right: 3rem
+}
+
+.mod-catal .catal-ed-main-desc h2 {
+    padding-left: 2rem !important;
+    padding-right: 3rem;
+    padding-top: 3rem
+}
+
+.mod-catal a:hover {
+    color: black !important
+}
+
+.mod-catal .catal-ed-activity .catal-ed-activity-link:hover {
+    color: white !important
+}
+
+.mod-catal .catal-ed-activity-title .catal-ed-title {
+    line-height: 49px !important
+}
+
+.mod-catal .catal-ed-main-cat {
+    margin-top: -104px;
+    border-left: 1px solid #e0e0e0;
+    padding-left: 25px;
+    min-width: 25rem !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0 !important
+}
+
+.mod-catal .catal-ed-main-cat h2 {
+    text-align: left;
+    color: #252525 !important;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-family: roboto-light, sans-serif;
+    font-size: 1.4rem !important;
+    text-transform: capitalize
+}
+
+.mod-catal .catal-ed-main-cat .catal-ed-main-cat-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0 !important
+}
+
+.mod-catal .catal-ed-main-cat .catal-ed-main-cat-list .catal-ex-item-cat-item {
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400
+}
+
+.mod-catal .catal-ed-main-cat .catal-ed-main-cat-list .catal-ex-item-cat-item a {
+    display: block;
+    -webkit-box-shadow: 0 6px 15px -9px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 15px -9px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    font-weight: 400;
+    background-color: #C5143A;
+    padding: 1rem 1.5rem;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease
+}

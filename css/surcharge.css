@@ -8563,6 +8563,27 @@ body.article .cl-item-phone span:nth-child(2) {
     background-repeat: no-repeat
 }
 
+.catal-nav-ex .btn-primary:hover {
+    color: white !important
+}
+
+#zone3 {
+    display: none
+}
+
+#zone3 .catal-nav-affix .catal-nav-affix-item.is-active .catal-nav-affix-link .qty-round {
+    background-color: #C5143A !important
+}
+
+#zone3 .mod-catal.catal-nav-affix .catal-nav-affix-link:hover,
+#zone3 .mod-catal.catal-nav-affix .catal-nav-affix-link:hover {
+    font-size: inherit
+}
+
+.mod-catal .inside {
+    background: black
+}
+
 .mod-catal .catal-ed-products .catal-edp-title,
 .mod-catal .catal-ed-products .catal-edp-item {
     border-bottom: 0
@@ -8582,24 +8603,24 @@ body.article .cl-item-phone span:nth-child(2) {
     color: #C5143A !important
 }
 
-.mod-catal .catal-ed-main-cat-item {
+.mod-catal .catal-ed-main .catal-ed-main-cat-item {
     min-width: 90%
 }
 
-.mod-catal .catal-ed-main-cat-link {
+.mod-catal .catal-ed-main .catal-ed-main-cat-link {
     padding: 1.5rem !important;
     color: white !important
 }
 
-.mod-catal .catal-ed-main-cat-link:hover {
+.mod-catal .catal-ed-main .catal-ed-main-cat-link:hover {
     color: #C5143A
 }
 
-.mod-catal .catal-ed-title {
+.mod-catal .catal-ed-main .catal-ed-title {
     margin-top: 0 !important
 }
 
-.mod-catal .catal-ed-main-cat-title {
+.mod-catal .catal-ed-main .catal-ed-main-cat-title {
     margin-bottom: 0.8rem !important
 }
 
@@ -8690,4 +8711,171 @@ body.article .cl-item-phone span:nth-child(2) {
     -webkit-transition: all .25s ease;
     -o-transition: all .25s ease;
     transition: all .25s ease
+}
+
+.catal-other-ex .catal-other-ex-item .catal-other-ex-actions {
+    position: absolute !important;
+    left: 0 !important
+}
+
+.catal-other-prd {
+    padding-bottom: 8rem
+}
+
+.catal-other-prd-actions {
+    position: absolute !important;
+    left: 0 !important;
+    top: 211px !important
+}
+
+.catal-other-prd-actions a span::after {
+    display: none !important
+}
+
+.product-details .mod-catal .catal-prd-group {
+    border-bottom: 0
+}
+
+.product-details .mod-catal .catal-prd-exhibitor .catal-prd-exhibitor-content {
+    width: 75% !important
+}
+
+.product-details .catal-prd-group {
+    border-top: 0
+}
+
+.product-details .catal-prd-main .catal-prd-main-desc {
+    border-top: 0
+}
+
+.product-details .catal-prd-main img {
+    margin-bottom: 0 !important
+}
+
+.product-details .catal-prd-main {
+    padding: 3rem !important
+}
+
+.product-details .breadcrumb-nav {
+    margin-bottom: 0;
+    position: absolute;
+    top: 15rem;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    text-align: center
+}
+
+.product-details h1 {
+    top: 13rem;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 23rem;
+    min-width: 50rem;
+    left: 50%;
+    color: white
+}
+
+.product-details .catal-prd-main,
+.product-details .catal-prd-group,
+.product-details .catal-other-prd {
+    margin: 0 auto;
+    max-width: 116rem
+}
+
+.product-details .catal-pr-ex-name {
+    position: relative;
+    top: 15rem;
+    top: 28rem;
+    text-transform: uppercase
+}
+
+.product-details .catal-pr-ex-name a {
+    font-size: 5.8rem;
+    color: white !important
+}
+
+.product-details .catal-pr-ex-name a span {
+    color: white !important;
+    font-family: "Roboto-slab-bold", sans-serif
+}
+
+.product-details .catal-pr-item-buttons {
+    top: 41rem;
+    position: absolute;
+    width: 100%;
+    z-index: 3
+}
+
+.product-details .catal-pr-item-buttons .btn-primary {
+    background-color: white;
+    border-color: white;
+    font-family: "Roboto-bold", sans-serif;
+    padding: 15px 40px 15px 22px
+}
+
+.product-details .catal-pr-item-buttons .btn-primary::after {
+    content: "+";
+    display: block;
+    position: absolute;
+    right: 25px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    color: #C5143A;
+    top: 86% !important;
+    right: 22px !important;
+    line-height: 30px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    background-image: none
+}
+
+.product-details .mod-catal .catal-prd-main {
+    margin-top: 9.5rem;
+    border: 1px solid #e0e0e0;
+    background-color: transparent;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.product-details .mod-catal.catal-nav-ex {
+    border-bottom: 1px solid #e3e9ea;
+    margin: 0;
+    padding-bottom: 0;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    color: white;
+    top: 57rem;
+    border-bottom: 0 none;
+    max-width: 116rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.product-details .mod-catal .inside {
+    min-height: 55rem
+}
+
+.product-details .mod-catal .inside::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 55rem;
+    width: 100%;
+    background-image: url(/theme/trustech_desktop_git/img/bg-header-trustech.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.35
 }

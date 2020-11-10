@@ -8909,3 +8909,6 @@ body.catalogue {
     background: #000;
     height: 15rem;
 }
+#catalog-v2 .CatalogProductStrip .CatalogMainTitle {
+    color: #000;
+}

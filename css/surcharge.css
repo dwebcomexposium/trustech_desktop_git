@@ -8898,23 +8898,23 @@ body.article .cl-item-phone span:nth-child(2) {
 }
 
 /* catalogue New 2020 */
-div#catalog-v2 {
+#catalog-v2 {
     margin-top: 125px;
 }
 body.catalogue {
     background-color: #000;
     color: #fff;
 }
-.catalogue .inside {
+#catalog-v2 .inside {
     background: #000;
     height: 15rem;
 }
 #catalog-v2 .CatalogProductStrip .CatalogMainTitle {
     color: #000;
 }
-.catalogue .site-banner, .catalogue .site-banner.is-stuck{
+#catalog-v2 .site-banner, .catalogue .site-banner.is-stuck{
 padding:0
 }
-.catalogue .site-banner.is-stuck {
+#catalog-v2 .site-banner.is-stuck {
     background-color: #000;
 }

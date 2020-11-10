@@ -8915,4 +8915,6 @@ body.catalogue {
 .catalogue .site-banner, .catalogue .site-banner.is-stuck{
 padding:0
 }
-
+.catalogue .site-banner.is-stuck {
+    background-color: #000;
+}

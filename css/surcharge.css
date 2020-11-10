@@ -8918,3 +8918,6 @@ padding:0
 #catalog-v2 .site-banner.is-stuck {
     background-color: #000;
 }
+#catalog-v2 .VueWrapper {
+    padding-top: 0;
+}

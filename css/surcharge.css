@@ -8896,3 +8896,16 @@ body.article .cl-item-phone span:nth-child(2) {
     background-position: center;
     opacity: 0.35
 }
+
+/* catalogue New 2020 */
+div#catalog-v2 {
+    margin-top: 200px;
+}
+body.catalogue {
+    background-color: #000;
+    color: #fff;
+}
+.catalogue .inside {
+    background: #000;
+    height: 15rem;
+}

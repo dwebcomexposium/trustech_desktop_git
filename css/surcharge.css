@@ -4809,6 +4809,7 @@ html[lang="fr"] body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu 
     height: 56.25vw; /* height = 100 * (9 / 16) = 56.25 */
     opacity: 0.6;
     max-width: none;
+    pointer-events: none;
 }
 
 .video-container .landing {

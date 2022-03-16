@@ -4810,7 +4810,7 @@ html[lang="fr"] body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu 
     max-width: none;
 }
 
-@media (min-aspect-ratio: 16/9) {
+@media (max-aspect-ratio: 16/9) {
     .video-container .canvas-video,
     .video-container .video-bg {
         /* height = 100 * (9 / 16) = 56.25 */
@@ -4818,7 +4818,7 @@ html[lang="fr"] body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu 
     }
 }
 
-@media (max-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: 16/9) {
     .video-container .canvas-video,
     .video-container .video-bg {
         /* width = 100 / (9 / 16) = 177.777777 */

@@ -4806,24 +4806,9 @@ html[lang="fr"] body:not(.front) #zone1 .main-navigation .mn-menu-line .mn-menu 
     position: relative;
     min-width: 100%;
     min-height: 100%;
+    height: 56.25vw; /* height = 100 * (9 / 16) = 56.25 */
     opacity: 0.6;
     max-width: none;
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .video-container .canvas-video,
-    .video-container .video-bg {
-        /* height = 100 * (9 / 16) = 56.25 */
-        height: 56.25vw;
-    }
-}
-
-@media (min-aspect-ratio: 16/9) {
-    .video-container .canvas-video,
-    .video-container .video-bg {
-        /* width = 100 / (9 / 16) = 177.777777 */
-        width: 177.78vh;
-    }
 }
 
 .video-container .landing {

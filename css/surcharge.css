@@ -2953,6 +2953,7 @@ body:not(.front) .intro-attendees .intro-img .wrap .intro-img-content .intro-bg 
     z-index: 0
 }
 
+.join--white h3,
 body:not(.front) h3 {
     font-size: 3.5rem;
     line-height: 4.2rem;
@@ -6352,6 +6353,7 @@ body.article .cl-item-phone span:nth-child(2) {
     width: 8rem
 }
 
+
 .join {
     background-image: url("/theme/trustech_desktop_git/img/pixel-grey.jpg");
     background-repeat: repeat-x;
@@ -6359,10 +6361,15 @@ body.article .cl-item-phone span:nth-child(2) {
     padding: 15rem 0 16rem
 }
 
+.join.join--white {
+    padding: 3rem 0 8rem;
+}
+
 .join h3 {
     margin-bottom: 2rem !important
 }
 
+.join--white h3 .title-deco,
 .join h3 .title-deco {
     color: #ebebeb !important
 }

@@ -2964,6 +2964,7 @@ body:not(.front) h3 {
     margin-top: 1.5rem
 }
 
+.join--white h3.text-center .title-deco,
 body:not(.front) h3.text-center .title-deco {
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -2975,6 +2976,7 @@ body:not(.front) h3+h4 {
     margin-top: -3rem
 }
 
+.join--white h3 .title-deco,
 body:not(.front) h3 .title-deco {
     color: #f5f5f5;
     font-size: 9rem;
@@ -2986,6 +2988,7 @@ body:not(.front) h3 .title-deco {
     z-index: 1
 }
 
+.join--white h3 .title-txt,
 body:not(.front) h3 .title-txt {
     position: relative;
     z-index: 2
@@ -6374,6 +6377,10 @@ body.article .cl-item-phone span:nth-child(2) {
     padding: 0 10rem
 }
 
+.join.join--white .items-global-join {
+    background-color: #fff;
+}
+
 .join .items-global-join::before,
 .join .items-global-join::after {
     content: '';
@@ -6388,6 +6395,11 @@ body.article .cl-item-phone span:nth-child(2) {
     -ms-transform: translateY(50%);
     transform: translateY(50%);
     border-radius: 1rem
+}
+
+.join.join--white .items-global-join::before,
+.join.join--white .items-global-join::after {
+    margin-top: 1.3rem;
 }
 
 .join .items-global-join::before {
@@ -6406,6 +6418,11 @@ body.article .cl-item-phone span:nth-child(2) {
     box-shadow: 0 27px 30px -25px rgba(0, 0, 0, 0.15);
     text-align: center;
     position: relative
+}
+
+.join.join--white .items-global-join .item-join {
+    -webkit-box-shadow: 0 6px 20px -6px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 20px -6px rgba(0,0,0,0.2);
 }
 
 .join .items-global-join .item-join:nth-child(even) {

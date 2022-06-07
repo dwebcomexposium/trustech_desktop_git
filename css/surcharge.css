@@ -8939,7 +8939,7 @@ body.catalogue {
     color: #000;
 }
 #catalog-v2 .site-banner, .catalogue .site-banner.is-stuck{
-padding:0
+padding:0;
 }
 #catalog-v2 .site-banner.is-stuck {
     background-color: #000;
